@@ -8,7 +8,7 @@ tags:
 ## 简介：
 那啥多的我也不多说了，相关知识自行谷歌。此文章参考自知乎大佬"CS专业那些事"的[文章](https://zhuanlan.zhihu.com/p/26625249)
 ## 准备：
-1. 注册GitHub账号[全球最大同性交友网站](www.github.com)，至于怎么详细的用，我会另起博客。
+1. 注册GitHub账号[全球最大同性交友网站](https://www.github.com)，至于怎么详细的用，我会另起博客。
 2. 安装[git](https://git-scm.com/download/)至于Git是啥我会另起一篇文章
 ## 具体步骤：
 1.  ### 安装成功后，将你的Git与GitHub帐号绑定
