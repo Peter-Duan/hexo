@@ -41,10 +41,8 @@ tags:
     使用npm命令安装Hexo，输入：
     ```bash
     npm install -g hexo-cli 
-    ``` 
-    
+    ```
     这个安装时间较长耐心等待，安装完成后，初始化我们的博客，输入：
-    
     ```bash
     hexo init blog
     ```
