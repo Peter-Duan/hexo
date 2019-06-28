@@ -4,7 +4,7 @@ date: 2019-06-21 23:46:50
 tags:
 ---
 # 安装篇
-![Github+Hexo](https://pic2.zhimg.com/v2-d4c1239e75c02e8482c22017a6c8d407_1200x500.jpg)
+![Github+Hexo](https://storage.googleapis.com/peter-duan-blog/19-06-28-13-20-28.png)
 ## 简介：
 那啥多的我也不多说了，相关知识自行谷歌。此文章参考自知乎大佬"CS专业那些事"的[文章](https://zhuanlan.zhihu.com/p/26625249)
 ## 准备：
@@ -29,7 +29,7 @@ tags:
     打开[GitHub_Settings_keys](https://github.com/settings/keys) 页面，新建new SSH Key. Title随便填，把复制到公钥粘贴进去。然后Add SSH Key.
     
     在Git Bash中检测GitHub公钥设置是否成功，输入 ssh git@github.com 
-    ![](https://pic3.zhimg.com/80/v2-da481ffa686410becd4186c656b4ebd6_hd.jpg)
+    ![](https://storage.googleapis.com/peter-duan-blog/19-06-28-13-18-52.png)
     如上则说明成功。这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，为了省去每次输入密码的步骤，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。
 
 2. ### 安装node.js
