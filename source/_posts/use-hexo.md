@@ -9,10 +9,10 @@ tags:
 ## 具体步骤：
 1. 创建仓库，名字任意
 2. 创建两个分支：master 与 gh-pages；
-![](https://raw.githubusercontent.com/Peter-Duan/picture/master/%20(2).png?token=ALRNQ2V7XORTONOTO2BIWEC5BZPV2)
+![](https://storage.googleapis.com/peter-duan-blog/%20(2).png)
 3. 设置GitHub pages的显示页面
- ![](https://raw.githubusercontent.com/Peter-Duan/picture/master/20190622132928.png?token=ALRNQ2RWAK4HM2TNB2XEGXS5BZS3M)
- ![](https://raw.githubusercontent.com/Peter-Duan/picture/master/20190622132939.png?token=ALRNQ2SAJULESXKE5HU3LT25BZS4C)
+ ![](https://storage.googleapis.com/peter-duan-blog/20190622132928.png)
+ ![](https://storage.googleapis.com/peter-duan-blog/20190622132939.png)
 4. 使用
 ```bash
 git clone git@github.com:用户名/仓库名.git拷贝仓库；
@@ -20,7 +20,7 @@ git clone git@github.com:用户名/仓库名.git拷贝仓库；
 5. 在本地仓库下用Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为gh-pages）;
 6. 修改_config.yml中的deploy参数，分支应为gh-pages；(这里有个坑，冒号后面要输入空格)
 7. 设置root
-![](https://raw.githubusercontent.com/Peter-Duan/picture/master/20190622132624.png?token=ALRNQ2Q3USQXXBCDPNAYZP25BZSP2)
+![](https://storage.googleapis.com/peter-duan-blog/20190622132624.png)
 8. 依次执行git add .、git commit -m "..."、git push origin hexo提交网站相关的文件；
 9. 执行hexo g -d生成网站并部署到GitHub上
 10. 查看网页。xxx.github.io/仓库名
