@@ -101,13 +101,13 @@
 <meta property="og:site_name" content="Peter Duan的Github博客">
 <meta property="og:description" content="安装篇 简介：那啥多的我也不多说了，相关知识自行谷歌。此文章参考自知乎大佬”CS专业那些事”的文章 准备： 注册GitHub账号全球最大同性交友网站，至于怎么详细的用，我会另起博客。  安装git至于Git是啥我会另起一篇文章 具体步骤： 安装成功后，将你的Git与GitHub帐号绑定鼠标右击打开Git Bash.设置user.name和user.email配置信息： 12git config -">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://pic2.zhimg.com/v2-d4c1239e75c02e8482c22017a6c8d407_1200x500.jpg">
-<meta property="og:image" content="https://pic3.zhimg.com/80/v2-da481ffa686410becd4186c656b4ebd6_hd.jpg">
-<meta property="og:updated_time" content="2019-06-22T17:07:30.729Z">
+<meta property="og:image" content="https://storage.googleapis.com/peter-duan-blog/19-06-28-13-20-28.png">
+<meta property="og:image" content="https://storage.googleapis.com/peter-duan-blog/19-06-28-13-18-52.png">
+<meta property="og:updated_time" content="2019-06-28T17:20:35.914Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安装Hexo">
 <meta name="twitter:description" content="安装篇 简介：那啥多的我也不多说了，相关知识自行谷歌。此文章参考自知乎大佬”CS专业那些事”的文章 准备： 注册GitHub账号全球最大同性交友网站，至于怎么详细的用，我会另起博客。  安装git至于Git是啥我会另起一篇文章 具体步骤： 安装成功后，将你的Git与GitHub帐号绑定鼠标右击打开Git Bash.设置user.name和user.email配置信息： 12git config -">
-<meta name="twitter:image" content="https://pic2.zhimg.com/v2-d4c1239e75c02e8482c22017a6c8d407_1200x500.jpg">
+<meta name="twitter:image" content="https://storage.googleapis.com/peter-duan-blog/19-06-28-13-20-28.png">
 
 
 
@@ -354,7 +354,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-22 13:07:30" itemprop="dateModified" datetime="2019-06-22T13:07:30-04:00">2019-06-22</time>
+                <time title="修改时间：2019-06-28 13:20:35" itemprop="dateModified" datetime="2019-06-28T13:20:35-04:00">2019-06-28</time>
               
             
           </span>
@@ -388,7 +388,7 @@
       
 
       
-        <h1 id="安装篇"><a href="#安装篇" class="headerlink" title="安装篇"></a>安装篇</h1><p><img src="https://pic2.zhimg.com/v2-d4c1239e75c02e8482c22017a6c8d407_1200x500.jpg" alt="Github+Hexo"></p>
+        <h1 id="安装篇"><a href="#安装篇" class="headerlink" title="安装篇"></a>安装篇</h1><p><img src="https://storage.googleapis.com/peter-duan-blog/19-06-28-13-20-28.png" alt="Github+Hexo"></p>
 <h2 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h2><p>那啥多的我也不多说了，相关知识自行谷歌。此文章参考自知乎大佬”CS专业那些事”的<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">文章</a></p>
 <h2 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h2><ol>
 <li><p>注册GitHub账号<a href="https://www.github.com" target="_blank" rel="noopener">全球最大同性交友网站</a>，至于怎么详细的用，我会另起博客。</p>
@@ -403,7 +403,7 @@
 
 <p>然后直接三个回车即可，默认不需要设置密码<br>然后找到生成的.ssh的文件夹中的id_rsa.pub密钥(一般在用户文件夹里)，将内容全部复制(用notepad++即可)</p>
 <p>打开<a href="https://github.com/settings/keys" target="_blank" rel="noopener">GitHub_Settings_keys</a> 页面，新建new SSH Key. Title随便填，把复制到公钥粘贴进去。然后Add SSH Key.</p>
-<p>在Git Bash中检测GitHub公钥设置是否成功，输入 ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br><img src="https://pic3.zhimg.com/80/v2-da481ffa686410becd4186c656b4ebd6_hd.jpg" alt><br>如上则说明成功。这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，为了省去每次输入密码的步骤，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。</p>
+<p>在Git Bash中检测GitHub公钥设置是否成功，输入 ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br><img src="https://storage.googleapis.com/peter-duan-blog/19-06-28-13-18-52.png" alt><br>如上则说明成功。这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，为了省去每次输入密码的步骤，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。</p>
 </li>
 <li><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p> Hexo基于Node.js，Node.js下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Download | Node.js</a> 下载安装包，注意安装Node.js会包含环境变量及npm的安装，安装后，检测Node.js是否安装成功，在命令行中输入 node -v 有数字说明成功了。QWQ</p>
 </li>
