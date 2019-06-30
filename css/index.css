@@ -160,7 +160,7 @@ table td {
   vertical-align: top;
 }
 *::selection {
-  background: #69c46d;
+  background: rgba(49,52,54,0.878);
   color: #f7f7f7;
 }
 .text-center {
@@ -939,7 +939,7 @@ blockquote {
 }
 #aside_content .card-author .toggle_change--primary,
 #aside_content .card-author .bookmark--primary {
-  color: #ff7242;
+  color: #212121;
 }
 #aside_content .card-author .toggle_change--animated,
 #aside_content .card-author .bookmark--animated {
@@ -962,7 +962,7 @@ blockquote {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ff7242;
+  background: #212121;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -o-transform: scaleX(0);
@@ -1310,7 +1310,7 @@ blockquote {
   line-height: 1.2rem;
 }
 .category-content ul li:hover:before {
-  border-color: #ff7242;
+  border-color: #212121;
 }
 .category-content ul li:before {
   top: 10px;
@@ -2107,7 +2107,7 @@ footer.footer-bg {
   line-height: 1.2rem;
 }
 .recent-post-item .content ul li:hover:before {
-  border-color: #ff7242;
+  border-color: #212121;
 }
 .recent-post-item .content ul li:before {
   top: 10px;
@@ -2128,7 +2128,7 @@ footer.footer-bg {
   color: #858585;
 }
 .recent-post-item .article-meta .sticky {
-  color: #ff7242;
+  color: #212121;
 }
 .recent-post-item .article-meta i {
   margin: 0 0.2rem 0 0.3rem;
@@ -2189,7 +2189,7 @@ footer.footer-bg {
   cursor: pointer;
 }
 .tag-cloud a:hover {
-  color: #ff7242 !important;
+  color: #212121 !important;
 }
 .tag-cloud__title {
   font-size: 1.8rem;
@@ -2211,7 +2211,7 @@ footer.footer-bg {
   line-height: 1;
 }
 .article-sort-title:hover:before {
-  border-color: #ff7242;
+  border-color: #212121;
 }
 .article-sort-title:before {
   position: absolute;
@@ -2251,7 +2251,7 @@ footer.footer-bg {
   transition: all 0.2s ease-in-out;
 }
 .article-sort-item:hover:before {
-  border-color: #ff7242;
+  border-color: #212121;
 }
 .article-sort-item:before {
   position: absolute;
@@ -2278,7 +2278,7 @@ footer.footer-bg {
 }
 .article-sort-item.year:before {
   top: 0.7rem;
-  border-color: #ff7242;
+  border-color: #212121;
 }
 .article-sort-item__time {
   position: absolute;
@@ -3342,7 +3342,7 @@ a.article-meta__categories:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ff7242;
+  background: #212121;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -o-transform: scaleX(0);
