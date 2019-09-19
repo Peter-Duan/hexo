@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>搭建指南</title>
+      <link href="/hexo/2019/06/22/use-hexo/"/>
+      <url>/hexo/2019/06/22/use-hexo/</url>
+      
+        <content type="html"><![CDATA[<h1 id="搭建篇"><a href="#搭建篇" class="headerlink" title="搭建篇"></a>搭建篇</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介:"></a>简介:</h2><p>之前我是按照“CS专业那些事”的<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">教程</a>来写的。但是我遇到了问题，如果我想在其他电脑上编辑并部署怎么办，于是我便根据这篇<a href="https://www.zhihu.com/question/21193762/answer/79109280" target="_blank" rel="noopener">教程</a>重新搭建了一遍。本教程适用于仓库名不想取xxx.github.io的童鞋QWQ</p><h2 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h2><ol><li><p>创建仓库，名字任意</p></li><li><p>创建两个分支：master 与 gh-pages；<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/%20(2).png" class="lozad"></p></li><li><p>设置GitHub pages的显示页面<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132928.png" class="lozad"><br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132939.png" class="lozad"></p></li><li><p>使用</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:用户名/仓库名.git拷贝仓库；</span><br></pre></td></tr></table></figure></li><li><p>在本地仓库下用Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为gh-pages）;</p></li><li><p>修改_config.yml中的deploy参数，分支应为gh-pages；(这里有个坑，冒号后面要输入空格)</p></li><li><p>设置root<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132624.png" class="lozad"></p></li><li><p>依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；</p></li><li><p>执行hexo g -d生成网站并部署到GitHub上</p></li><li><p>查看网页。xxx.github.io/仓库名</p></li><li><p>最后一个是语言，我安装了next主题，但是语言其实是要在hexo 的config里换并不是next主题里换。</p><h2 id="至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。"><a href="#至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。" class="headerlink" title="至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。"></a>至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。</h2></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安装Hexo</title>
+      <link href="/hexo/2019/06/21/install-hexo/"/>
+      <url>/hexo/2019/06/21/install-hexo/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装篇"><a href="#安装篇" class="headerlink" title="安装篇"></a>安装篇</h1><p><img alt="Github+Hexo" data-src="https://storage.googleapis.com/peter-duan-blog/19-06-28-13-20-28.png" class="lozad"></p><h2 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h2><p>那啥多的我也不多说了，相关知识自行谷歌。此文章参考自知乎大佬”CS专业那些事”的<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">文章</a></p><h2 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h2><ol><li><p>注册GitHub账号<a href="https://www.github.com" target="_blank" rel="noopener">全球最大同性交友网站</a>，至于怎么详细的用，我会另起博客。</p></li><li><p>安装<a href="https://git-scm.com/download/" target="_blank" rel="noopener">git</a>至于Git是啥我会另起一篇文章</p><h2 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h2></li><li><h3 id="安装成功后，将你的Git与GitHub帐号绑定"><a href="#安装成功后，将你的Git与GitHub帐号绑定" class="headerlink" title="安装成功后，将你的Git与GitHub帐号绑定"></a>安装成功后，将你的Git与GitHub帐号绑定</h3><p>鼠标右击打开Git Bash.<br>设置user.name和user.email配置信息：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的GitHub用户名(去掉引号)"</span></span><br><span class="line">git config --global user.email <span class="string">"你的GitHub注册邮箱(去掉引号)"</span></span><br></pre></td></tr></table></figure><p>生成ssh密钥文件：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"你的GitHub注册邮箱(去掉引号)"</span></span><br></pre></td></tr></table></figure><p>然后直接三个回车即可，默认不需要设置密码<br>然后找到生成的.ssh的文件夹中的id_rsa.pub密钥(一般在用户文件夹里)，将内容全部复制(用notepad++即可)</p><p>打开<a href="https://github.com/settings/keys" target="_blank" rel="noopener">GitHub_Settings_keys</a> 页面，新建new SSH Key. Title随便填，把复制到公钥粘贴进去。然后Add SSH Key.</p><p>在Git Bash中检测GitHub公钥设置是否成功，输入 ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-06-28-13-18-52.png" class="lozad"><br>如上则说明成功。这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，为了省去每次输入密码的步骤，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。</p></li><li><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p> Hexo基于Node.js，Node.js下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Download | Node.js</a> 下载安装包，注意安装Node.js会包含环境变量及npm的安装，安装后，检测Node.js是否安装成功，在命令行中输入 node -v 有数字说明成功了。QWQ</p></li><li><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p> Hexo就是我们的个人博客网站的框架， 这里需要自己在电脑常里创建一个文件夹，可以命名为Blog，Hexo框架与以后你自己发布的网页都在这个文件夹中。创建好后，进入文件夹中，按住shift键，右击鼠标点击命令行(这里有个坑，如果是powershell的话详见<a href>传送门</a>)</p><p> 使用npm命令安装Hexo，输入：</p> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p> 注意，这里的命令都是作用在刚刚创建的Blog文件夹中。</p></li></ol><h2 id="至此，我们就安装完了具体使用的话详见下篇博客。"><a href="#至此，我们就安装完了具体使用的话详见下篇博客。" class="headerlink" title="至此，我们就安装完了具体使用的话详见下篇博客。"></a>至此，我们就安装完了具体使用的话详见下篇博客。</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>序章</title>
+      <link href="/hexo/2019/06/21/First/"/>
+      <url>/hexo/2019/06/21/First/</url>
+      
+        <content type="html"><![CDATA[<p>这几天，我一直在思考。如果我想考一个好大学，我是否应该提升一下我的编程水平了，但是我却看不下去视频和书。于是我便想利用建站和git以此来激发我的兴趣。</p><h2 id="另外一些原因"><a href="#另外一些原因" class="headerlink" title="另外一些原因"></a>另外一些原因</h2><h3 id="1-本来我是搭建了一个wordpress博客在我的谷歌云上，但是我的谷歌云会过期，我的内容会消失这样有背我的初衷，记录生活，记录折腾。"><a href="#1-本来我是搭建了一个wordpress博客在我的谷歌云上，但是我的谷歌云会过期，我的内容会消失这样有背我的初衷，记录生活，记录折腾。" class="headerlink" title="1.本来我是搭建了一个wordpress博客在我的谷歌云上，但是我的谷歌云会过期，我的内容会消失这样有背我的初衷，记录生活，记录折腾。"></a>1.本来我是搭建了一个wordpress博客在我的谷歌云上，但是我的谷歌云会过期，我的内容会消失这样有背我的初衷，记录生活，记录折腾。</h3><h3 id="2-其次，对于一个程序员来说我认为git，Github和markdown的使用是一个很重要的事，遂选择以md为主的hexo框架，并且利用GitHub-pages来建这个站。"><a href="#2-其次，对于一个程序员来说我认为git，Github和markdown的使用是一个很重要的事，遂选择以md为主的hexo框架，并且利用GitHub-pages来建这个站。" class="headerlink" title="2.其次，对于一个程序员来说我认为git，Github和markdown的使用是一个很重要的事，遂选择以md为主的hexo框架，并且利用GitHub pages来建这个站。"></a>2.其次，对于一个程序员来说我认为git，Github和markdown的使用是一个很重要的事，遂选择以md为主的hexo框架，并且利用GitHub pages来建这个站。</h3><h3 id="3-我对于php并不熟悉，可以说是什么都不知道，所以以php为主的wordpress并不适合我。"><a href="#3-我对于php并不熟悉，可以说是什么都不知道，所以以php为主的wordpress并不适合我。" class="headerlink" title="3.我对于php并不熟悉，可以说是什么都不知道，所以以php为主的wordpress并不适合我。"></a>3.我对于php并不熟悉，可以说是什么都不知道，所以以php为主的wordpress并不适合我。</h3><h1 id="正如我的subtitles所引用的一样“路漫漫其修远兮，吾将上下而求索”。我将利用暑假时间好好学习相关知识。"><a href="#正如我的subtitles所引用的一样“路漫漫其修远兮，吾将上下而求索”。我将利用暑假时间好好学习相关知识。" class="headerlink" title="正如我的subtitles所引用的一样“路漫漫其修远兮，吾将上下而求索”。我将利用暑假时间好好学习相关知识。"></a>正如我的subtitles所引用的一样“路漫漫其修远兮，吾将上下而求索”。我将利用暑假时间好好学习相关知识。</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
