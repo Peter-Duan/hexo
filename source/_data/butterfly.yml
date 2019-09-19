@@ -317,7 +317,7 @@ announcement:
   content: 感謝訪問本站，若喜歡請收藏 ^_^
 
 reward:
-  enable: true
+  enable: false
   QR_code:
     - itemlist:
         img: /img/wechat.jpg
@@ -373,8 +373,8 @@ hr:
 # 主頁subtitle
 subtitle: 
   enable: true
-  sub1: 今日事,今日畢
-  sub2: Never put off till tomorrow what you can do today
+  sub1: 路漫漫其修远兮,吾将上下而求索
+  sub2: God helps those who help themselves.
 
 #側邊欄顯示設置
 aside:
@@ -393,11 +393,11 @@ translate:
   # 默認按鈕顯示文字
   default: 简
   #网站默认语言，1: 繁體中文, 2: 简体中文
-  defaultEncoding: 1
+  defaultEncoding: 2
   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
   translateDelay: 0
   #博客网址
-  cookieDomain: "https://jerryc.me/"
+  cookieDomain: "https://peter-duan.github.io/hexo"
   #當文字是簡體時，按鈕顯示的文字
   msgToTraditionalChinese: "繁"
   #當文字是繁體時，按鈕顯示的文字
