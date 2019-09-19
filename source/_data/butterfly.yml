@@ -354,6 +354,10 @@ lazyload:
   enable: true
   script: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
 
+# prefetch預加載
+instantpage:
+  enable: true
+  
 # 避免重複網址分散seo
 canonical: true
 
