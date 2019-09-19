@@ -239,7 +239,7 @@ disqus:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: true # if you want use valine,please set this value is true
+  enable: false # if you want use valine,please set this value is true
   appId:   # leancloud application app id
   appKey:   # leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
@@ -357,7 +357,7 @@ lazyload:
 # prefetch預加載
 instantpage:
   enable: true
-  
+
 # 避免重複網址分散seo
 canonical: true
 
@@ -432,3 +432,28 @@ fireworks:
 #百度推送
 baidu_push:
   enable: false
+
+  #================================
+  # Local search
+# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
+# ---------------
+local_search:
+  enable: true
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+
+# MathJax
+# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#MathJax
+# ---------------
+mathjax:
+  enable: true
+  cdn: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# KaTeX
+# ---------------
+katex:
+  enable: true
+  cdn:
+    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css  
+  hide_scrollbar: true
