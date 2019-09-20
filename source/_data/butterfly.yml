@@ -79,7 +79,7 @@ algolia_search:
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
 # ---------------
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
@@ -142,7 +142,7 @@ avatar: https://storage.googleapis.com/peter-duan-blog/19-09-17-22-05-82.png
 
 # the banner image of index
 # if the banner of another page not setting,it will show the top_img
-top_img: https://storage.googleapis.com/peter-duan-blog/19-06-30-18-35-02.png
+top_img: https://storage.googleapis.com/peter-duan-blog/19-09-19-21-39-97.png
 
 #the banner image of post
 # if the post not set the post cover and post top image, it will show it
@@ -395,7 +395,7 @@ hr:
 subtitle: 
   enable: true
   sub1: 路漫漫其修远兮,吾将上下而求索
-  sub2: God helps those who help themselves.
+  sub2: The road ahead will be long ,Our climb will be steep.
 
 #側邊欄顯示設置
 aside:
@@ -437,23 +437,7 @@ baidu_push:
   # Local search
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
 # ---------------
-local_search:
-  enable: true
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
 
 # MathJax
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#MathJax
 # ---------------
-mathjax:
-  enable: true
-  cdn: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-
-# KaTeX
-# ---------------
-katex:
-  enable: true
-  cdn:
-    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css  
-  hide_scrollbar: true
