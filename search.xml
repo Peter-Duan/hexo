@@ -8,7 +8,7 @@
       <link href="/hexo/2019/06/22/use-hexo/"/>
       <url>/hexo/2019/06/22/use-hexo/</url>
       
-        <content type="html"><![CDATA[<h1 id="搭建篇"><a href="#搭建篇" class="headerlink" title="搭建篇"></a>搭建篇</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介:"></a>简介:</h2><p>之前我是按照“CS专业那些事”的<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">教程</a>来写的。但是我遇到了问题，如果我想在其他电脑上编辑并部署怎么办，于是我便根据这篇<a href="https://www.zhihu.com/question/21193762/answer/79109280" target="_blank" rel="noopener">教程</a>重新搭建了一遍。本教程适用于仓库名不想取xxx.github.io的童鞋QWQ</p><h2 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h2><ol><li><p>创建仓库，名字任意</p></li><li><p>创建两个分支：master 与 gh-pages；<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/%20(2).png" class="lozad"></p></li><li><p>设置GitHub pages的显示页面<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132928.png" class="lozad"><br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132939.png" class="lozad"></p></li><li><p>使用</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:用户名/仓库名.git拷贝仓库；</span><br></pre></td></tr></table></figure></li><li><p>在本地仓库下用Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为gh-pages）;</p></li><li><p>修改_config.yml中的deploy参数，分支应为gh-pages；(这里有个坑，冒号后面要输入空格)</p></li><li><p>设置root<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132624.png" class="lozad"></p></li><li><p>依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；</p></li><li><p>执行hexo g -d生成网站并部署到GitHub上</p></li><li><p>查看网页。xxx.github.io/仓库名</p></li><li><p>最后一个是语言，我安装了next主题，但是语言其实是要在hexo 的config里换并不是next主题里换。</p><h2 id="至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。"><a href="#至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。" class="headerlink" title="至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。"></a>至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。</h2></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="搭建篇"><a href="#搭建篇" class="headerlink" title="搭建篇"></a>搭建篇</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介:"></a>简介:</h2><p>之前我是按照“CS专业那些事”的<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">教程</a>来写的。但是我遇到了问题，如果我想在其他电脑上编辑并部署怎么办，于是我便根据这篇<a href="https://www.zhihu.com/question/21193762/answer/79109280" target="_blank" rel="noopener">教程</a>重新搭建了一遍。本教程适用于仓库名不想取xxx.github.io的童鞋QWQ</p><h2 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h2><ol><li><p>创建仓库，名字任意</p></li><li><p>创建两个分支：master 与 gh-pages；<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/(2).png" class="lozad"></p></li><li><p>设置GitHub pages的显示页面<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132928.png" class="lozad"><br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132939.png" class="lozad"></p></li><li><p>使用</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:用户名/仓库名.git拷贝仓库；</span><br></pre></td></tr></table></figure></li><li><p>在本地仓库下用Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为gh-pages）;</p></li><li><p>修改_config.yml中的deploy参数，分支应为gh-pages；(这里有个坑，冒号后面要输入空格)</p></li><li><p>设置root<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20190622132624.png" class="lozad"></p></li><li><p>依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；</p></li><li><p>执行hexo g -d生成网站并部署到GitHub上</p></li><li><p>查看网页。xxx.github.io/仓库名</p></li><li><p>最后一个是语言，我安装了next主题，但是语言其实是要在hexo 的config里换并不是next主题里换。</p><h2 id="至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。"><a href="#至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。" class="headerlink" title="至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。"></a>至此网页搭建篇就结束了，同学们可以愉快的搭建博客并记录了。</h2></li></ol>]]></content>
       
       
       <categories>
@@ -103,17 +103,6 @@
     
     
     <entry>
-      <title>archives</title>
-      <link href="/hexo/archives/index.html"/>
-      <url>/hexo/archives/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="/hexo/categories/index.html"/>
       <url>/hexo/categories/index.html</url>
@@ -139,6 +128,17 @@
       <title>标签</title>
       <link href="/hexo/tags/index.html"/>
       <url>/hexo/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>archives</title>
+      <link href="/hexo/archives/index.html"/>
+      <url>/hexo/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

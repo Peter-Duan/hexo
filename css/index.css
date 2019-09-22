@@ -81,7 +81,7 @@ h6 code {
   box-sizing: border-box;
 }
 #content-inner .img-alt {
-  text-decoration: none;
+  text-decoration: underline;
   color: #858585;
 }
 #toggle-sidebar {
