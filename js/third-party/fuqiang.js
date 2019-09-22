@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
             "left": x,
             "position": "absolute",
             "font-weight": "bold",
-            "color": "#212121b0"  ////可以自定义更换色值
+            "color": "#000000"  ////可以自定义更换色值
         });
         $("body").append($i);
         $i.animate({

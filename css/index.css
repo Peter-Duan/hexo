@@ -430,13 +430,6 @@ table td {
   z-index: -1;
   pointer-events: none;
 }
-.mouseSum,
-z-index: 9999999,
-top: y - 20,
-left: x,
-position: absolute,
-font-weight: bold,
-color: #212121b0,
 img[src=""],
 img:not([src]) {
   opacity: 0;
