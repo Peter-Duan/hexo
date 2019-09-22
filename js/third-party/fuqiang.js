@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
             "left": x,
             "position": "absolute",
             "font-weight": "bold",
-            "color": "#ff0000",
+            "color": "rgba(80, 80, 80, 0.76)",
             "-webkit-touch-callout": "none",
             "-webkit-user-select": "none",
             "-khtml-user-select": "none",
