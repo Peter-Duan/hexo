@@ -81,7 +81,7 @@ h6 code {
   box-sizing: border-box;
 }
 #content-inner .img-alt {
-  text-decoration: underline;
+  text-decoration: none;
   color: #858585;
 }
 #toggle-sidebar {
@@ -3408,8 +3408,8 @@ img:hover {
   margin: 0 4px;
 }
 .layout_post #post a {
-  text-decoration: none;
-  color: rgba(0,0,0,0.729);
+  text-decoration: underline;
+  color: #0b6796;
 }
 .read-mode {
   background: #faf9de;
