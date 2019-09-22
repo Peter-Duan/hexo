@@ -103,9 +103,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/hexo/categories/index.html"/>
-      <url>/hexo/categories/index.html</url>
+      <title>archives</title>
+      <link href="/hexo/archives/index.html"/>
+      <url>/hexo/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -114,9 +114,9 @@
     
     
     <entry>
-      <title>archives</title>
-      <link href="/hexo/archives/index.html"/>
-      <url>/hexo/archives/index.html</url>
+      <title>分类</title>
+      <link href="/hexo/categories/index.html"/>
+      <url>/hexo/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

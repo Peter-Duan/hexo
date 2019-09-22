@@ -211,7 +211,7 @@ table td {
 }
 #vcomment textarea {
   font-size: 0.7rem;
-  background: url("/hexo/img/comment_bg2.png") 100% 100% no-repeat;
+  background: url("/hexo/img/comment_bg.png") 100% 100% no-repeat;
 }
 #vcomment .info {
   display: none;
