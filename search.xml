@@ -92,20 +92,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/hexo/link/index.html"/>
-      <url>/hexo/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/hexo/tags/index.html"/>
-      <url>/hexo/tags/index.html</url>
+      <title>关于我</title>
+      <link href="/hexo/about/index.html"/>
+      <url>/hexo/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -125,9 +114,20 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/hexo/about/index.html"/>
-      <url>/hexo/about/index.html</url>
+      <title>友情链接</title>
+      <link href="/hexo/link/index.html"/>
+      <url>/hexo/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/hexo/tags/index.html"/>
+      <url>/hexo/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
