@@ -1,4 +1,3 @@
-< script type = "text/javascript" >
 // 鼠标点击特效
 var mouseSum = 0;
 jQuery(document).ready(function($) {
@@ -27,4 +26,3 @@ jQuery(document).ready(function($) {
         });
     });
 }); 
-< /script>
