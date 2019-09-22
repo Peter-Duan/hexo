@@ -14,12 +14,12 @@ jQuery(document).ready(function($) {
             "position": "absolute",
             "font-weight": "bold",
             "color": "#212121b0",
-            "-webkit-touch-callout": none,
-            "-webkit-user-select": none,
-            "-khtml-user-select": none,
-            "-moz-user-select": none,
-            "-ms-user-select": none,
-            "user-select": none  ////可以自定义更换色值
+            "-webkit-touch-callout": "none",
+            "-webkit-user-select": "none",
+            "-khtml-user-select": "none",
+            "-moz-user-select": "none",
+            "-ms-user-select": "none",
+            "user-select": "none"  ////可以自定义更换色值
         });
         $("body").append($i);
         $i.animate({
