@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Live2d-1</title>
+      <link href="/hexo/2019/11/12/Live2d-1/"/>
+      <url>/hexo/2019/11/12/Live2d-1/</url>
+      
+        <content type="html"><![CDATA[<p>今天是snowday所以抽空试移植了live2d到Qt上，遇到不少小毛病，特开新贴记录一下。</p><hr><h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><ol><li>现在Qt里创建一个新widget项目</li><li>把Live2d Demo 里的文件copy到新项目里</li><li>添加文件到项目里，覆盖main.cpp</li><li>按照之前的vc的项目文件把头文件和依赖库加到项目里</li></ol><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INCLUDEPATH += &quot;D:\Live2d\Qt_Demo\Core\include&quot;</span><br><span class="line">INCLUDEPATH += &quot;D:\Live2d\Qt_Demo\Framework\src&quot;</span><br><span class="line">INCLUDEPATH += &quot;D:\Live2d\Qt_Demo\thirdParty\stb\include&quot;</span><br><span class="line">INCLUDEPATH += &quot;D:\Live2d\Qt_Demo\thirdParty\glew-2.1.0\include&quot;</span><br><span class="line">INCLUDEPATH += &quot;D:\Live2d\Qt_Demo\thirdParty\glfw-3.3.bin.WIN64\include&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">LIBS += -L&quot;D:\Live2d\Qt_Demo\thirdParty\glew-2.1.0/lib/Release/x64&quot;</span><br><span class="line">LIBS += -L&quot;D:\Live2d\Qt_Demo\thirdParty\glfw-3.3.bin.WIN64/lib-vc2017&quot;</span><br><span class="line">LIBS += -L&quot;D:\Live2d\Qt_Demo\dll&quot;</span><br></pre></td></tr></table></figure><pre><code>LIBS += -L // 意思是把整个目录加进去LIBS += -L&quot;目录&quot;-l文件名 // 意思是这个目录的文件</code></pre><h3 id="问题一-报错未定义的GLint"><a href="#问题一-报错未定义的GLint" class="headerlink" title="问题一:  报错未定义的GLint"></a>问题一:  报错未定义的GLint</h3><p>出现这个是因为vcproj里的预定义没加进去。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DEFINES += WIN32</span><br><span class="line">DEFINES += _WINDOWS</span><br><span class="line">DEFINES += CSM_TARGET_WIN_GL</span><br><span class="line">DEFINES += GLEW_STATIC</span><br></pre></td></tr></table></figure><p>这样就OK了。</p><h3 id="问题二：-出现无名obj文件，并且无法打开"><a href="#问题二：-出现无名obj文件，并且无法打开" class="headerlink" title="问题二： 出现无名obj文件，并且无法打开"></a>问题二： 出现无名obj文件，并且无法打开</h3><p>这是因为pro文件里多了一个 “\” qmake误认为这个也要生成obj文件，所以导致此问题，删去即可。<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-11-12-16-22-37.png" class="lozad"></p><h2 id="未解决问题：一堆未定义的外部指令。"><a href="#未解决问题：一堆未定义的外部指令。" class="headerlink" title="未解决问题：一堆未定义的外部指令。"></a>未解决问题：一堆未定义的外部指令。</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Live2d </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Live2d </tag>
+            
+            <tag> Qt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>搭建指南</title>
       <link href="/hexo/2019/06/22/use-hexo/"/>
       <url>/hexo/2019/06/22/use-hexo/</url>
@@ -103,9 +130,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/hexo/categories/index.html"/>
-      <url>/hexo/categories/index.html</url>
+      <title>友情链接</title>
+      <link href="/hexo/link/index.html"/>
+      <url>/hexo/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -114,9 +141,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/hexo/link/index.html"/>
-      <url>/hexo/link/index.html</url>
+      <title>分类</title>
+      <link href="/hexo/categories/index.html"/>
+      <url>/hexo/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
