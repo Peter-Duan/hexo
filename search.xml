@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>19-11-30-diary</title>
+      <link href="/hexo/2019/11/30/19-11-30-diary/"/>
+      <url>/hexo/2019/11/30/19-11-30-diary/</url>
+      
+        <content type="html"><![CDATA[<h2 id="日记-19-11-30"><a href="#日记-19-11-30" class="headerlink" title="日记 19/11/30"></a>日记 19/11/30</h2><hr><p>&nbsp; &nbsp; 最近老想着搞个树莓派玩玩，但是不知道我买了以后会不会成“吃灰派”。所以我理智分析了很久，做了全方面的调查。选中了下面的<a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html" target="_blank" rel="noopener">套餐</a>。</p><p>&nbsp; &nbsp; 之所以选这个是因为：第一树莓派并不需要键鼠，所以Complete Starter Kit 自然pass,第二裸板有不太好，所以选了Starter Kit。这个一共CA $134，而且我手上有100美刀去银行存起来大概换给CA $132 自己贴两块钱刚刚好。</p><p>&nbsp; &nbsp; 下面来讨论一下利弊。 </p><h3 id="利"><a href="#利" class="headerlink" title="利:"></a>利:</h3><ol><li>可以搭建NAS,正好用上我的旧硬盘。</li><li>我一直想搭一个天气和snowday情况播放系统。</li><li>对于学习<code>Python</code>和<code>Linux</code>还是很好的。</li><li>相较于软件，我对硬件更感兴趣所以<code>GPIO</code>是一个优点<h3 id="弊："><a href="#弊：" class="headerlink" title="弊："></a>弊：</h3></li><li>花钱，成本高。我选中的将近 $100 - CA $134.</li><li>不知道自己有多大的兴趣，可能成为“吃灰派”</li><li>花父母的钱，心里不舒服。</li></ol><p>&nbsp; &nbsp; 今天暂且无法得出结论日记到此。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Diary </tag>
+            
+            <tag> Raspberry pi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Live2d-1</title>
       <link href="/hexo/2019/11/12/Live2d-1/"/>
       <url>/hexo/2019/11/12/Live2d-1/</url>
@@ -130,6 +157,17 @@
     
     
     <entry>
+      <title>标签</title>
+      <link href="/hexo/tags/index.html"/>
+      <url>/hexo/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类</title>
       <link href="/hexo/categories/index.html"/>
       <url>/hexo/categories/index.html</url>
@@ -144,17 +182,6 @@
       <title>友情链接</title>
       <link href="/hexo/link/index.html"/>
       <url>/hexo/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/hexo/tags/index.html"/>
-      <url>/hexo/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
