@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>圣诞计划</title>
+      <link href="/hexo/2019/12/04/Christmas-Plan/"/>
+      <url>/hexo/2019/12/04/Christmas-Plan/</url>
+      
+        <content type="html"><![CDATA[<h2 id="记录一下圣诞计划。"><a href="#记录一下圣诞计划。" class="headerlink" title="记录一下圣诞计划。"></a>记录一下圣诞计划。</h2><p>&nbsp; &nbsp; 不知不觉，一年圣诞有</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Plan </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>19-11-30-diary</title>
       <link href="/hexo/2019/11/30/19-11-30-diary/"/>
       <url>/hexo/2019/11/30/19-11-30-diary/</url>
       
-        <content type="html"><![CDATA[<h2 id="日记-19-11-30"><a href="#日记-19-11-30" class="headerlink" title="日记 19/11/30"></a>日记 19/11/30</h2><hr><p>&nbsp; &nbsp; 最近老想着搞个树莓派玩玩，但是不知道我买了以后会不会成“吃灰派”。所以我理智分析了很久，做了全方面的调查。选中了下面的<a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html" target="_blank" rel="noopener">套餐</a>。</p><p>&nbsp; &nbsp; 之所以选这个是因为：第一树莓派并不需要键鼠，所以Complete Starter Kit 自然pass,第二裸板有不太好，所以选了Starter Kit。这个一共CA $134，而且我手上有100美刀去银行存起来大概换给CA $132 自己贴两块钱刚刚好。</p><p>&nbsp; &nbsp; 下面来讨论一下利弊。 </p><h3 id="利"><a href="#利" class="headerlink" title="利:"></a>利:</h3><ol><li>可以搭建NAS,正好用上我的旧硬盘。</li><li>我一直想搭一个天气和snowday情况播放系统。</li><li>对于学习<code>Python</code>和<code>Linux</code>还是很好的。</li><li>相较于软件，我对硬件更感兴趣所以<code>GPIO</code>是一个优点。    </li></ol><h3 id="弊："><a href="#弊：" class="headerlink" title="弊："></a>弊：</h3><ol><li>花钱，成本高。我选中的将近 $100 - CA $134.</li><li>不知道自己有多大的兴趣，可能成为“吃灰派”</li><li>花父母的钱，心里不舒服。</li></ol><p>&nbsp; &nbsp; 今天暂且无法得出结论日记到此。</p>]]></content>
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Sorry, please try again." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">Please enter password.</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="24dc998c0ebeb365eea59d784e6bb6658254483bbc17112bae8c6d6b8ebfb163">0ca18e2ad7bfd71b183af28940aed6ee13f39a94c8a43aede9b65e07e9fab6788713c0b49a23e9a0d48789ce90ee7d8af99d784e08a74b3a1de37f9a05bb4f20ff952fd1d304d3996b8790972c66fe208f8128052d9ea5ec8dc1ca4058f9700d57e4ad58f59cc3225f89d1345d943f686d62e7d94ce943cae4f6d401c35f076a9dc3c46e7c629ed91057c7a03e5b027a34b8da901d45119a8423c68421a8fefb7aa8e6d1e7c285c5d8a90ce7d21914843012e628364b578fb4f5a0162bfaae2db46b8735058bd5492717c2d57cab97cdb7829a85603ad3713fd4593494c7c523e4446389d4bef4af0e8135ece6493477910ec8f6e60f0e782af5aad0f19ff7e96627d5b64e009f8a8536d1f6cedd7058836c5152bcaaf3f2384400492a3eeba520c91170e60dd810b7cf369965846ca2f83997bcb9d4e352c488a91eb80df740e510c6eae2f23b03d9193f5e20040b8b780089b7193665c9926701c0fab7a17ff1b1264114376384a6bfc38e428c3cf2091f828ae606abd890ed69e0ce443dddac76d229c949e66a3bd7442d03266365187151ffd53a8ed5b605e047b78e5d056253cf4ef5097c0dd16d6065f88f30763ee48e53cb7ca382152af1a5fca935bd0e400206dfb962059c36ba70c5b5f035fd01530430a4f70fd200e912b5e9a76691d3ae2f2a5c5a475aa9fd7bedc724b21ef0f061d20a6e26fafb78d10178d08469db961f790a327f717a2d584944c1c531f50be7ac4ce894f35352e72a32a8a9df92977f0c37bfe9fb88a62eb0d7baf73d192463be487fccb29cb3cba60c387e5dd5b93f95b83cd8cb5645e4774c68a39c9ba3489b2ea6611033b864a380ba31890d0aaddce79ff63636cf27c718e2220ccecfae5c7c438953517e63679943bf81c4bdbf7e1b1ebbb3f118aee5fa5295e7185cbd4c41d7b2c3a7995065ef732f9f501bb04f8f2e52c9e6d5e8f098f9710cc4672c466bbc7e54b88466a4761827e8d4fed0777d4e46ceaa2a11b793eb9bdc7ac75398a3e9f3bd5e4940aa185f29cc51cf142ee78dd5c6031e415b02af48c9fb159652948cac72a25180598b92733d89242a72207b2021cf4a1105b88fe88219fff387f3c8cf12c0df6b337548b82742699b1b2ed23a3b9818e207f049ba249d6e975f52ac5e94f60ab3a04e2081346b6fcd6b69f0b2a8cf1040086868c45815af755cd2814a2c54f2dd248fdf57832f8b1c730155e789d01241151f53996b5d246a1af0263e7688d14cd3c0671ab4a09c3f93f32f67e445e5fa122b9d16f93b517f043dcd31f33d204262396092daa91dc2bfde77010a9fe0f461783c62b072a5965d16cefec8adedb2f6af9f552bd8605a783734478522d94746ab32a759a6f371ff303bd8634662a0fca35f8eef9234b2da91285e01a662145a8121eb4be7e299d877fdfe7b73db6b3da202511bf6195e40d36bea63f9606b72d17cffd1f6c001a37cc9d450df913cceef9d75244890c1ae72e982d79928a953f4907c41aaff7fc0a550a383e825cc10c0b33e45f68ca57f9182339e0ab65c4b7a691a77bd8507d497beb218082e2eaa6b220c5e226896a4afcb688ffd8cf1eb1c78a34142172d3746aaae0d118e41f0e7e90ea4a26579992415489c9afe55af4d42a9754fe1559cf6144654c1b72bf433c3f4da7f84398689713d2c3101756a43e2c510d046b8cb952a2a48bec6a43e34bee8b9c5148de99050421750c45ec15a4e2089e2ae91788afa8d4a0c91995b2806630362eb963e6a3af99e0bad1e4b39ba4c72f35afa5a4829c5a7a269f234996e536bbc6d29f26e5b1cb4eba31a41d51586add1be3d0836b73f401dca5f60dd1d108eda0a745ef6a521494fd160ea8ef5335b219adee111aba9c405ebb71457fa50099aba20226d58e2ca6c21d96c06461bc607184e23f3f1ef6e57e31c2f7f2c6742063dd4acda10eee7c3f297ff8e548a13c31a2b944398a55e68b21c05691dfcc08e1ac7a57733a6025c8707f9f00c71d61f13e0cb3a4bcd87409a685be6e0a6cca97ead3095af6c276fa9c5157db37882308b8ba7ade06a87bce045175db0060d3b56774c98fd3d326b918409c08c538c3ae1f73fa91d13f101babfab74baba1307207c16878f6a1ebbea8102a933f3</script></div><script src="/hexo/lib/blog-encrypt.js"></script><link href="/hexo/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>
@@ -184,9 +209,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/hexo/link/index.html"/>
-      <url>/hexo/link/index.html</url>
+      <title>分类</title>
+      <link href="/hexo/categories/index.html"/>
+      <url>/hexo/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -206,9 +231,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/hexo/categories/index.html"/>
-      <url>/hexo/categories/index.html</url>
+      <title>友情链接</title>
+      <link href="/hexo/link/index.html"/>
+      <url>/hexo/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
