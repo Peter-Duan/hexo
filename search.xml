@@ -8,7 +8,7 @@
       <link href="/hexo/2019/12/04/Christmas-Plan/"/>
       <url>/hexo/2019/12/04/Christmas-Plan/</url>
       
-        <content type="html"><![CDATA[<h2 id="记录一下圣诞计划。"><a href="#记录一下圣诞计划。" class="headerlink" title="记录一下圣诞计划。"></a>记录一下圣诞计划。</h2><p>&nbsp; &nbsp; 不知不觉，一年圣诞有</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="记录一下圣诞计划。"><a href="#记录一下圣诞计划。" class="headerlink" title="记录一下圣诞计划。"></a>记录一下圣诞计划。</h2><p>&nbsp; &nbsp; 不知不觉，一年又过去了。圣诞节马上就来了。去年的圣诞计划蛮失败的，所以今年还是好好计划一下比较好。</p>]]></content>
       
       
       <categories>
@@ -21,6 +21,8 @@
         <tags>
             
             <tag> Plan </tag>
+            
+            <tag> Locked </tag>
             
         </tags>
       
@@ -220,9 +222,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/hexo/tags/index.html"/>
-      <url>/hexo/tags/index.html</url>
+      <title>友情链接</title>
+      <link href="/hexo/link/index.html"/>
+      <url>/hexo/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -231,9 +233,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/hexo/link/index.html"/>
-      <url>/hexo/link/index.html</url>
+      <title>标签</title>
+      <link href="/hexo/tags/index.html"/>
+      <url>/hexo/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
