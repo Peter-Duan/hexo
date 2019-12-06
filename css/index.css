@@ -1994,7 +1994,7 @@ blockquote footer cite:before {
 }
 #aside_content .aside_category_list:hover,
 #aside_content .archive-list-item:hover {
-  background-color: rgba(0,0,0,0.729);
+  background-color: rgba(110,110,110,0.729);
   color: #363636;
 }
 #aside_content .aside_category_list a,
