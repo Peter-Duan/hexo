@@ -14,24 +14,40 @@ function debounce(func, wait, immediate) {
   }
 };
 
-function throttle(func, wait, mustRun) {
-  var timeout
-  var startTime = new Date()
+function throttle(func, wait, options) {
+  var timeout, context, args, result;
+  var previous = 0;
+  if (!options) options = {};
 
-  return function () {
-    var context = this
-    var args = arguments
-    var curTime = new Date()
+  var later = function() {
+      previous = options.leading === false ? 0 : new Date().getTime();
+      timeout = null;
+      func.apply(context, args);
+      if (!timeout) context = args = null;
+  };
 
-    clearTimeout(timeout)
-    if (curTime - startTime >= mustRun) {
-      func.apply(context, args)
-      startTime = curTime
-    } else {
-      timeout = setTimeout(func, wait)
-    }
-  }
-};
+  var throttled = function() {
+      var now = new Date().getTime();
+      if (!previous && options.leading === false) previous = now;
+      var remaining = wait - (now - previous);
+      context = this;
+      args = arguments;
+      if (remaining <= 0 || remaining > wait) {
+          if (timeout) {
+              clearTimeout(timeout);
+              timeout = null;
+          }
+          previous = now;
+          func.apply(context, args);
+          if (!timeout) context = args = null;
+      } else if (!timeout && options.trailing !== false) {
+          timeout = setTimeout(later, remaining);
+      }
+  };
+
+  return throttled;
+}
+
 
 function isMobile() {
   var check = false;
@@ -45,6 +61,41 @@ function scrollTo(name) {
     scrollTop: scroll_offset.top
   })  
 };
+
+function loadScript(url, callback) {
+  var script = document.createElement("script")
+  script.type = "text/javascript";
+  if (script.readyState) { //IE
+    script.onreadystatechange = function () {
+      if (script.readyState == "loaded" ||
+        script.readyState == "complete") {
+        script.onreadystatechange = null;
+        callback();
+      }
+    };
+  } else { //Others
+    script.onload = function () {
+      callback();
+    };
+  }
+  script.src = url;
+  document.body.appendChild(script);
+};
+
+function snackbarShow(text, showAction, duration) {
+  var showAction = (typeof showAction !== 'undefined') ? showAction : false;
+  var duration = (typeof duration !== 'undefined') ? duration : 2000;
+  var position = GLOBAL_CONFIG.Snackbar.position
+  var bg = document.documentElement.getAttribute('data-theme') === 'light' ? GLOBAL_CONFIG.Snackbar.bgLight : GLOBAL_CONFIG.Snackbar.bgDark
+  Snackbar.show({
+    text: text,
+    backgroundColor: bg,
+    showAction: showAction,
+    duration: duration,
+    pos: position
+  });
+}
+
 
 window.debounce = debounce
 
