@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Third-English-Blog</title>
+      <link href="/hexo/2019/12/12/Third-English-Blog/"/>
+      <url>/hexo/2019/12/12/Third-English-Blog/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Third-blog-for-Shadows-cast-by-stars"><a href="#Third-blog-for-Shadows-cast-by-stars" class="headerlink" title="Third blog for Shadows cast by stars"></a>Third blog for Shadows cast by stars</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> English </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> English </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Second-English-Blog</title>
       <link href="/hexo/2019/12/11/Second-English-Blog/"/>
       <url>/hexo/2019/12/11/Second-English-Blog/</url>
@@ -254,9 +281,9 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/hexo/about/index.html"/>
-      <url>/hexo/about/index.html</url>
+      <title>分类</title>
+      <link href="/hexo/categories/index.html"/>
+      <url>/hexo/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -265,9 +292,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/hexo/categories/index.html"/>
-      <url>/hexo/categories/index.html</url>
+      <title>关于我</title>
+      <link href="/hexo/about/index.html"/>
+      <url>/hexo/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
