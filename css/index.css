@@ -3826,7 +3826,7 @@ blockquote footer cite:before {
   padding-left: 0.3rem;
 }
 a {
-  color: #56b6e7;
+  color: #858585;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -4048,7 +4048,7 @@ img:hover {
 }
 .layout_post #post a {
   text-decoration: none;
-  color: rgba(0,0,0,0.729);
+  color: #56b6e7;
 }
 .layout_post #post h1,
 .layout_post #post h2,
