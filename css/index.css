@@ -109,7 +109,7 @@ h6 code {
 }
 #content-inner .img-alt {
   text-decoration: none;
-  color: #858585;
+  color: #56b6e7;
 }
 #toggle-sidebar {
   position: fixed;
@@ -172,7 +172,7 @@ table {
   border-collapse: collapse;
 }
 table thead {
-  background: rgba(133,133,133,0.1);
+  background: rgba(86,182,231,0.1);
 }
 table th,
 table td {
@@ -3418,7 +3418,7 @@ blockquote footer cite:before {
   border-color: #212121;
 }
 .article-sort-item__time {
-  color: #858585;
+  color: #56b6e7;
   font-size: 0.7rem;
   padding-left: 0.4rem;
 }
@@ -3467,7 +3467,7 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 .article-sort-item__post:hover {
-  color: #858585;
+  color: #56b6e7;
 }
 .article-sort-img {
   height: 80px;
@@ -3495,7 +3495,7 @@ blockquote footer cite:before {
 }
 .category-list .category-list-count {
   margin-left: 0.4rem;
-  color: #858585;
+  color: #56b6e7;
 }
 .category-list .category-list-count:before {
   content: "(";
@@ -3562,7 +3562,7 @@ blockquote footer cite:before {
   text-align: center;
 }
 #pagination .space {
-  color: #858585;
+  color: #56b6e7;
 }
 #pagination .page-number {
   display: inline-block;
@@ -3826,7 +3826,7 @@ blockquote footer cite:before {
   padding-left: 0.3rem;
 }
 a {
-  color: #858585;
+  color: #56b6e7;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
