@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>树莓派记2</title>
+      <link href="/hexo/2019/12/13/raspberrypi-2/"/>
+      <url>/hexo/2019/12/13/raspberrypi-2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="树莓派记2"><a href="#树莓派记2" class="headerlink" title="树莓派记2"></a>树莓派记2</h2><p><del>不要问我为什么没有1</del></p><p>心心念念好久的树莓派终于到了。在拿到之后竟有些失落。不知为何，可能是少了那种期待，也可能是最近几天不知道为什么对任何事情都失去了激情。废话不多说，先写一下总结的技术要点吧。</p><ol><li>安装Raspbian</li><li>在无显示器，键盘鼠标的情况下如何SSH</li><li>换apt源</li><li>Xrdp实现Windows远程登陆树莓派桌面</li><li>FRP内网穿透</li></ol><h3 id="1-安装Raspbian"><a href="#1-安装Raspbian" class="headerlink" title="1. 安装Raspbian"></a>1. 安装Raspbian</h3><p>我买的树莓派套餐里给的SD卡里预装了NOOBS(给萌新装系统的工具，操作简单，适合新手)。 但是我又没有显示屏，所以只能选择自己装系统。</p><ol><li><p>将卡插入读卡器。</p></li><li><p>格式化SD卡，工具<a href="https://www.sdcard.org/downloads/formatter/eula_windows/index.html" target="_blank" rel="noopener">SD Card Formatter</a>。简单的格一下就好了。<br><img alt="SD Card Formatter" data-src="https://storage.googleapis.com/peter-duan-blog/19-12-13-23-28-87.png" class="lazyload"></p></li><li><p>下载镜像，<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="noopener">地址</a><br>建议新手下载这个<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-13-23-35-35.png" class="lazyload"></p></li><li><p>烧录系统，工具<a href="https://sourceforge.net/projects/win32diskimager/" target="_blank" rel="noopener">Win32DiskImage</a>。<img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-13-23-37-02.png" class="lazyload">选好磁盘，写入即可。烧完后磁盘背重命名成boot而且只有200多MB，正常现象不必惊慌。Windows可能会提醒你格式化已查看，不必理会，取消即可。</p></li></ol><h3 id="2-在无显示器，键盘鼠标的情况下如何ssh。"><a href="#2-在无显示器，键盘鼠标的情况下如何ssh。" class="headerlink" title="2. 在无显示器，键盘鼠标的情况下如何ssh。"></a>2. 在无显示器，键盘鼠标的情况下如何ssh。</h3><p>由于预算(<del>穷</del>)问题，我并没有买键鼠，显示屏。但是这点问题并不能难到我。</p><h4 id="方案一（推荐）："><a href="#方案一（推荐）：" class="headerlink" title="方案一（推荐）："></a>方案一（推荐）：</h4><ol><li><p>将卡插进读卡器。</p></li><li><p>找到boot目录，新建文件ssh(注意不要有后缀名)。</p></li><li><p>boot目录下新建wpa_supplicant.conf，按照下面的格式填入内容并保存wpa_supplicant.conf文件。</p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">country=CN</span><br><span class="line">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</span><br><span class="line">update_config=1</span><br><span class="line">network=&#123;</span><br><span class="line">    ssid=&quot;你的wifi名称&quot;</span><br><span class="line">    psk=&quot;你的wifi密码&quot;</span><br><span class="line">    priority=1 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>插电启动树莓派，Google Play安装NetX，扫描局域网，多出来的就是raspberry pi的ip。</p></li><li><p>用SSH连接树莓派 </p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh pi@raspberryip</span><br></pre></td></tr></table></figure><p> 默认用户名<figure class="highlight plain"><figcaption><span>默认密码：```raspberry```。 </span></figcaption><table><tr><td class="code"><pre><span class="line">#### 方案二：</span><br><span class="line">1. 将卡插入读卡器。</span><br><span class="line">2. 找到boot目录，新建文件ssh(注意不要有后缀名)</span><br><span class="line">1. 准备一条数据线，一头连到手机，另一头连树莓派USB。</span><br><span class="line">2. 打开手机的USB网络共享。</span><br><span class="line">3. Google Play安装NetX，扫描局域网，多出来的就是raspberry pi的ip。</span><br><span class="line">4. 手机上安装JuiceSSH链接即可。默认用户名```pi``` 默认密码：```raspberry```。 </span><br><span class="line"></span><br><span class="line">### 3. 换apt源</span><br><span class="line">出于地区限制，apt的速度会非常慢，这时换一个好的镜像就尤为重要。换镜像源是基本操作，不多赘述了。可参考[https://mirror.tuna.tsinghua.edu.cn/help/raspbian/](https://mirror.tuna.tsinghua.edu.cn/help/raspbian/) </span><br><span class="line"></span><br><span class="line">换完之后记得更新</span><br></pre></td></tr></table></figure></p></li></ol><p>sudo apt-get update<br>sudo apt-get upgrade</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">### 4. Xrdp实现Windows远程登陆树莓派桌面</span><br><span class="line">之所以要安装Xrdp是因为，如果仅仅通过ssh连接树莓派是看不到图形界面的，想要看到的话可以通过VNC或其他远程桌面软件。选xrdp纯粹是为了方便，因为在任何Windows操作系统上可以用mstsc。</span><br><span class="line"></span><br><span class="line">1. 安装Xrdp，执行如下命令</span><br></pre></td></tr></table></figure><pre><code>sudo apt-get install xrdp<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2. 安装VNC</span><br></pre></td></tr></table></figure>sudo apt-get install tightvncserver<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3. 启动Xrdp</span><br></pre></td></tr></table></figure>sudo /etc/init.d/xrdp start<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4. 开机自启</span><br></pre></td></tr></table></figure>sudo update-rc.d xrdp defaults```</code></pre><ol start="5"><li>打开mstsc (Win + R)，输入树莓派IP地址，点击连接。<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-14-00-10-00.png" class="lazyload">没错的话，就可以登上了<img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-14-00-11-32.png" class="lazyload"></li></ol><h3 id="5-FRP内网穿透"><a href="#5-FRP内网穿透" class="headerlink" title="5. FRP内网穿透"></a>5. FRP内网穿透</h3><p>大部分时候我们是不在局域网的，这时候我们就需要内网穿透。</p><ol><li>下载地址<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">Github</a></li><li>记得选择正确的版本，像我是Raspberry Pi 4B用的是armv7l所以我该选arm版的。</li><li>配置起来很简单，网上也有大把资料，不多赘述。<a href="https://github.com/fatedier/frp/blob/master/README_zh.md" target="_blank" rel="noopener">官方文档</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Raspberry pi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Raspberry pi </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Third-English-Blog</title>
       <link href="/hexo/2019/12/12/Third-English-Blog/"/>
       <url>/hexo/2019/12/12/Third-English-Blog/</url>
@@ -281,17 +308,6 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/hexo/about/index.html"/>
-      <url>/hexo/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="/hexo/categories/index.html"/>
       <url>/hexo/categories/index.html</url>
@@ -306,6 +322,17 @@
       <title>友情链接</title>
       <link href="/hexo/link/index.html"/>
       <url>/hexo/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/hexo/about/index.html"/>
+      <url>/hexo/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
