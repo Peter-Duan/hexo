@@ -35,7 +35,7 @@
       <link href="/hexo/2019/12/13/raspberrypi-3/"/>
       <url>/hexo/2019/12/13/raspberrypi-3/</url>
       
-        <content type="html"><![CDATA[<h2 id="树莓派记3"><a href="#树莓派记3" class="headerlink" title="树莓派记3"></a>树莓派记3</h2><p>拿到树莓派就不得不说一下他的GPIO了。GPIO(General-purpose input/output)，这是GPIO的编号<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-14-23-42-91.png" class="lazyload"></p><h3 id="1-连接面包板"><a href="#1-连接面包板" class="headerlink" title="1. 连接面包板"></a>1. 连接面包板</h3><p>把树莓派连接到面包板可方便我们调试电路。</p><p>材料：</p><ol><li>GPIO扩展板<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-21-93.jpg" class="lazyload"></li><li>40P排线<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-19-73.jpg" class="lazyload"></li><li>面包板<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-23-87.jpg" class="lazyload"></li><li>线材若干<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-22-89.jpg" class="lazyload"><br><video controls autoplay name="media"><source src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-24-35.mp4" type="video/mp4"></video></li></ol>]]></content>
+        <content type="html"><![CDATA[<h2 id="树莓派记3"><a href="#树莓派记3" class="headerlink" title="树莓派记3"></a>树莓派记3</h2><p>拿到树莓派就不得不说一下他的GPIO了。GPIO(General-purpose input/output)，这是GPIO的编号<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-14-23-42-91.png" class="lazyload"></p><h3 id="1-连接面包板"><a href="#1-连接面包板" class="headerlink" title="1. 连接面包板"></a>1. 连接面包板</h3><p>把树莓派连接到面包板可方便我们调试电路。</p><p>材料：</p><ol><li>GPIO扩展板<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-47-80.jpg" class="lazyload"></li><li>40P排线<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-47-75.jpg" class="lazyload"></li><li>面包板<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-46-76.jpg" class="lazyload"></li><li>线材若干<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-46-25.jpg" class="lazyload"></li><li>若干LED</li></ol><p>连接方法：</p><ol><li>将40P排线两端分别接到树莓派GPIO口和扩展版</li><li>将扩展版插到面包板上。 注意面包板方向以及正负极是否和T型扩展版的正负极一致。</li></ol><embed id="embed" src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-54-13.svg" type="image/svg+xml"><video controls autoplay="flase" name="media" width="75%" height="75%"><source src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-24-35.mp4" type="video/mp4"></video>]]></content>
       
       
       <categories>
@@ -335,6 +335,17 @@
     
     
     <entry>
+      <title>关于我</title>
+      <link href="/hexo/about/index.html"/>
+      <url>/hexo/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类</title>
       <link href="/hexo/categories/index.html"/>
       <url>/hexo/categories/index.html</url>
@@ -349,17 +360,6 @@
       <title>友情链接</title>
       <link href="/hexo/link/index.html"/>
       <url>/hexo/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于我</title>
-      <link href="/hexo/about/index.html"/>
-      <url>/hexo/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
