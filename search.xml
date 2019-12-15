@@ -31,6 +31,33 @@
     
     
     <entry>
+      <title>树莓派记3</title>
+      <link href="/hexo/2019/12/13/raspberrypi-3/"/>
+      <url>/hexo/2019/12/13/raspberrypi-3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="树莓派记3"><a href="#树莓派记3" class="headerlink" title="树莓派记3"></a>树莓派记3</h2><p>拿到树莓派就不得不说一下他的GPIO了。GPIO(General-purpose input/output)，这是GPIO的编号<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-14-23-42-91.png" class="lazyload"></p><h3 id="1-连接面包板"><a href="#1-连接面包板" class="headerlink" title="1. 连接面包板"></a>1. 连接面包板</h3><p>把树莓派连接到面包板可方便我们调试电路。</p><p>材料：</p><ol><li>GPIO扩展板<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-21-93.jpg" class="lazyload"></li><li>40P排线<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-19-73.jpg" class="lazyload"></li><li>面包板<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-23-87.jpg" class="lazyload"></li><li>线材若干<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-22-89.jpg" class="lazyload"><video width="1280" height="720" src="https://storage.googleapis.com/peter-duan-blog/19-12-15-14-24-35.mp4)" controls="controls">The `<video>` tag is not supported by your browser.</video></video></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Raspberry pi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Raspberry pi </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Third-English-Blog</title>
       <link href="/hexo/2019/12/12/Third-English-Blog/"/>
       <url>/hexo/2019/12/12/Third-English-Blog/</url>
@@ -247,6 +274,33 @@
     
     
     <entry>
+      <title>Test for Language</title>
+      <link href="/hexo/2019/06/21/Test-Lang/"/>
+      <url>/hexo/2019/06/21/Test-Lang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> English </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>序章</title>
       <link href="/hexo/2019/06/21/First/"/>
       <url>/hexo/2019/06/21/First/</url>
@@ -276,46 +330,8 @@
     </entry>
     
     
-    
-    <entry>
-      <title>Test for Language</title>
-      <link href="/hexo/2019/06/21/Test-Lang/"/>
-      <url>/hexo/2019/06/21/Test-Lang/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> English </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> Blog </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
   
   
-    
-    
-    <entry>
-      <title>关于我</title>
-      <link href="/hexo/about/index.html"/>
-      <url>/hexo/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
     
     
     <entry>
@@ -330,9 +346,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/hexo/tags/index.html"/>
-      <url>/hexo/tags/index.html</url>
+      <title>友情链接</title>
+      <link href="/hexo/link/index.html"/>
+      <url>/hexo/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -341,9 +357,20 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/hexo/link/index.html"/>
-      <url>/hexo/link/index.html</url>
+      <title>关于我</title>
+      <link href="/hexo/about/index.html"/>
+      <url>/hexo/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/hexo/tags/index.html"/>
+      <url>/hexo/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
