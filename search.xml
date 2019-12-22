@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>树莓派记5</title>
+      <link href="/hexo/2019/12/22/raspberrypi-5/"/>
+      <url>/hexo/2019/12/22/raspberrypi-5/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Raspberry pi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Raspberry pi </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>树莓派记4</title>
+      <link href="/hexo/2019/12/22/raspberrypi-4/"/>
+      <url>/hexo/2019/12/22/raspberrypi-4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="树莓派记4"><a href="#树莓派记4" class="headerlink" title="树莓派记4"></a>树莓派记4</h2><p>这个星期抽空摸鱼也加了不少功能。</p><ol><li>Samba</li></ol><p>注释掉所有关于home的</p><ol start="2"><li><p>新增Putty密钥登陆,配色 Blog</p></li><li><p>开机自启 Blog</p><pre><code>先查找出为什么错误解决方案，nohup</code></pre></li><li><p>自建Git</p></li><li><p>更新Chromium<br>卸载Chromium<br>官网更新下载Chromium</p></li><li><p>修改时区，以矫正时间</p></li><li><p>高分屏     </p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Raspberry pi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Raspberry pi </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Fifth-English-Blog</title>
       <link href="/hexo/2019/12/19/Fifth-English-Blog/"/>
       <url>/hexo/2019/12/19/Fifth-English-Blog/</url>
@@ -328,33 +382,6 @@
     
     
     <entry>
-      <title>Test for Language</title>
-      <link href="/hexo/2019/06/21/Test-Lang/"/>
-      <url>/hexo/2019/06/21/Test-Lang/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> English </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> Blog </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>序章</title>
       <link href="/hexo/2019/06/21/First/"/>
       <url>/hexo/2019/06/21/First/</url>
@@ -378,6 +405,33 @@
             <tag> Programimg </tag>
             
             <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Test for Language</title>
+      <link href="/hexo/2019/06/21/Test-Lang/"/>
+      <url>/hexo/2019/06/21/Test-Lang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> English </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Blog </tag>
             
         </tags>
       
@@ -411,9 +465,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/hexo/tags/index.html"/>
-      <url>/hexo/tags/index.html</url>
+      <title>友情链接</title>
+      <link href="/hexo/link/index.html"/>
+      <url>/hexo/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -422,9 +476,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/hexo/link/index.html"/>
-      <url>/hexo/link/index.html</url>
+      <title>标签</title>
+      <link href="/hexo/tags/index.html"/>
+      <url>/hexo/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
