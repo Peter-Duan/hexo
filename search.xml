@@ -35,7 +35,7 @@
       <link href="/hexo/2019/12/22/raspberrypi-4/"/>
       <url>/hexo/2019/12/22/raspberrypi-4/</url>
       
-        <content type="html"><![CDATA[<h2 id="树莓派记4"><a href="#树莓派记4" class="headerlink" title="树莓派记4"></a>树莓派记4</h2><p>这个星期抽空摸鱼也加了不少功能。</p><ol><li>Samba</li><li>新增Putty密钥登陆,配色</li><li>开机自启frp </li><li>更新Chromium</li><li>修改时区，以矫正时间</li><li>高分屏</li></ol><h3 id="1-SAMBA"><a href="#1-SAMBA" class="headerlink" title="1.SAMBA"></a>1.SAMBA</h3><p>Samba，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议做链接的自由软件。第三版不仅可访问及分享SMB的文件夹及打印机，本身还可以集成入Windows Server的网域，扮演为网域控制站（Domain Controller）以及加入Active Directory成员。简而言之，此软件在Windows与UNIX系列操作系统之间搭起一座桥梁，让两者的资源可互通有无。</p><p>*[注释]：注释内容</p><p>注释掉所有关于home的</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="树莓派记4"><a href="#树莓派记4" class="headerlink" title="树莓派记4"></a>树莓派记4</h2><p>这个星期抽空摸鱼也加了不少功能。</p><ol><li>Samba</li><li>Putty密钥登陆, 配色, 高分屏</li><li>开机自启frp </li><li>更新Chromium</li><li>修改时区，以矫正时间</li></ol><h3 id="1-SAMBA"><a href="#1-SAMBA" class="headerlink" title="1.SAMBA"></a>1.SAMBA</h3><p><strong><a title="Samba. (2019, December 21). Retrieved from 维基百科, 自由的百科全书: https://zh.wikipedia.org/w/index.php?title=Samba&oldid=57352224" href="https://zh.wikipedia.org/w/index.php?title=Samba&oldid=57352224" target="_blank">Samba，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协议做链接的自由软件。第三版不仅可访问及分享SMB的文件夹及打印机，本身还可以集成入Windows Server的网域，扮演为网域控制站（Domain Controller）以及加入Active Directory成员。简而言之，此软件在Windows与UNIX系列操作系统之间搭起一座桥梁，让两者的资源可互通有无。</a></strong></p><ol><li><p>安装smb</p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install samba</span><br></pre></td></tr></table></figure></li><li><p>备份<code>smb.conf</code> </p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak</span><br></pre></td></tr></table></figure></li><li><p>修改<code>smb.conf</code></p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi /etc/samba/smb.conf</span><br></pre></td></tr></table></figure><p> 找到文件末尾添加如下</p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[配置名]</span><br><span class="line">comment = my share directory</span><br><span class="line">path = 共享文件夹路径</span><br><span class="line">browseable = yes</span><br><span class="line">writeable = yes</span><br><span class="line">guestok = no</span><br></pre></td></tr></table></figure><p> <img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-21-31-66.png" class="lazyload"><br> 如果不想把home目录也共享出去的话可以把上面的都注释掉<br> <img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-21-37-57.png" class="lazyload"></p></li><li><p>增加samba用户</p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo smbpasswd -a pi (linux用户名, 树莓派默认是pi)</span><br></pre></td></tr></table></figure><p> 输入密码即可。</p></li><li><p>重启samba</p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo service smbd restart</span><br></pre></td></tr></table></figure></li><li><p>测试<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-21-42-75.png" class="lazyload"></p></li></ol><h3 id="2-Putty密钥登陆-配色-高分屏问题"><a href="#2-Putty密钥登陆-配色-高分屏问题" class="headerlink" title="2. Putty密钥登陆, 配色, 高分屏问题"></a>2. Putty密钥登陆, 配色, 高分屏问题</h3><p>我现在用的是Putty虽然我也有Xshell但是奈何电脑配置不行，用Xshell做不到秒启动。但是用Putty每次ssh登录都要输密码确实麻烦，设置一个密钥会方便的多。</p><h4 id="密钥登录"><a href="#密钥登录" class="headerlink" title="密钥登录"></a>密钥登录</h4><ol><li><p>打开PuTTYgen生成一个密钥。安装putty的话会自动安装，去安装目录即可找到。<br><img alt="Save private key" data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-21-49-38.png" class="lazyload"><br>生成完保存私钥，复制公钥。</p></li><li><p>SSH到树莓派，编辑ssh文件</p> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi ~/.ssh/authorized_keys</span><br></pre></td></tr></table></figure><p> 没有的话创建一个，把公钥粘贴进去，保存退出。</p></li><li><p>打开Putty<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-21-54-66.png" class="lazyload"><br>设置 <code>Auto-login username</code><br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-21-55-93.png" class="lazyload"><br>设置私钥路径。之后记得保存设置。</p><h4 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h4><p>Putty原本的配色真是辣眼睛。网上找了一个温和点的配色。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\Default%20Settings]</span><br><span class="line">&quot;UseSystemColours&quot;=dword:00000000</span><br><span class="line">&quot;TryPalette&quot;=dword:00000000</span><br><span class="line">&quot;ANSIColour&quot;=dword:00000001</span><br><span class="line">&quot;Xterm256Colour&quot;=dword:00000001</span><br><span class="line">&quot;BoldAsColour&quot;=dword:00000001</span><br><span class="line">&quot;Colour0&quot;=&quot;211,215,207&quot;</span><br><span class="line">&quot;Colour1&quot;=&quot;238,238,236&quot;</span><br><span class="line">&quot;Colour2&quot;=&quot;46,52,54&quot;</span><br><span class="line">&quot;Colour3&quot;=&quot;46,52,54&quot;</span><br><span class="line">&quot;Colour4&quot;=&quot;0,0,0&quot;</span><br><span class="line">&quot;Colour5&quot;=&quot;0,255,0&quot;</span><br><span class="line">&quot;Colour6&quot;=&quot;46,52,54&quot;</span><br><span class="line">&quot;Colour7&quot;=&quot;85,87,83&quot;</span><br><span class="line">&quot;Colour8&quot;=&quot;204,0,0&quot;</span><br><span class="line">&quot;Colour9&quot;=&quot;239,41,41&quot;</span><br><span class="line">&quot;Colour10&quot;=&quot;78,154,6&quot;</span><br><span class="line">&quot;Colour11&quot;=&quot;138,226,52&quot;</span><br><span class="line">&quot;Colour12&quot;=&quot;196,160,0&quot;</span><br><span class="line">&quot;Colour13&quot;=&quot;252,233,79&quot;</span><br><span class="line">&quot;Colour14&quot;=&quot;52,101,164&quot;</span><br><span class="line">&quot;Colour15&quot;=&quot;114,159,207&quot;</span><br><span class="line">&quot;Colour16&quot;=&quot;117,80,123&quot;</span><br><span class="line">&quot;Colour17&quot;=&quot;173,127,168&quot;</span><br><span class="line">&quot;Colour18&quot;=&quot;6,152,154&quot;</span><br><span class="line">&quot;Colour19&quot;=&quot;52,226,226&quot;</span><br><span class="line">&quot;Colour20&quot;=&quot;211,215,207&quot;</span><br><span class="line">&quot;Colour21&quot;=&quot;238,238,236&quot;</span><br></pre></td></tr></table></figure></li></ol><p>复制代码，新建reg文件粘贴进去，运行即可。</p><h3 id="高分屏问题"><a href="#高分屏问题" class="headerlink" title="高分屏问题"></a>高分屏问题</h3><p>我的电脑是Surface，有一块高分屏看着确实很舒服，但是有些软件的字体会十分模糊。就行这样：<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-22-33-48.jpg" class="lazyload"><br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-22-34-55.jpg" class="lazyload"><br>曾经看到我一度怀疑自己是不是。。。</p><p>但是只要找到软件右击-属性-兼容性-更改高DPI设置-缩放-系统(增强)<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-22-38-09.png" class="lazyload"><br>之后画面就清楚多了。</p><p><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-22-34-72.jpg" class="lazyload"><br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-22-34-27.jpg" class="lazyload"></p><h3 id="3-开机自启frp"><a href="#3-开机自启frp" class="headerlink" title="3. 开机自启frp"></a>3. 开机自启frp</h3><p>这个我之前就设置过，不过不知道为什么没有效果。最后找到了原因。是因为刚开机是并没有网络，frp会代理失败，于是写了个脚本。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">cd /home/pi/frp</span><br><span class="line">while :</span><br><span class="line">do</span><br><span class="line">        ping -c 1 114.114.114.114 &gt; /dev/null 2&gt;&amp;1</span><br><span class="line">        if [ $? -eq 0 ];then</span><br><span class="line">                 break</span><br><span class="line">        fi #检测是否连接上网</span><br><span class="line">done</span><br><span class="line">nohup /home/pi/frp/frp_0.30.0_linux_arm/frpc -c /home/pi/frp/frp_0.30.0_linux_arm/frpc.ini &amp;</span><br></pre></td></tr></table></figure><p>开机自启这个脚本就好了。</p><h3 id="4-更新Chromium"><a href="#4-更新Chromium" class="headerlink" title="4. 更新Chromium"></a>4. 更新Chromium</h3><p>由于Selenium需要webdriver所以就顺手更新一下Chromium。</p><ol><li><p>下载最新安装包。</p><ul><li><p><a href="https://packages.debian.org/stable/web/chromium" target="_blank" rel="noopener">Chromium</a></p></li><li><p><a href="https://packages.debian.org/stable/web/chromium-common" target="_blank" rel="noopener">安装依赖</a></p></li><li><p><a href="https://packages.debian.org/buster/chromium-l10n" target="_blank" rel="noopener">语言包</a></p></li><li><p><a href="https://packages.debian.org/stable/web/chromium-driver" target="_blank" rel="noopener">WebDriver</a></p><p>下载时注意选armhf的</p></li></ul></li><li><p>分别安装chromium-common，Chromium，语言包，WebDriver(若只升级浏览器，可不安装webdriver)</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo dpkg -i 包名.deb</span><br></pre></td></tr></table></figure></li></ol><h3 id="5-修改时间"><a href="#5-修改时间" class="headerlink" title="5. 修改时间"></a>5. 修改时间</h3><p>在使用Python Time模块的时候发现时间不对，调查一下发现是因为时区不对，修改即可。</p><p>命令行输入 </p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure><p><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-23-00-50.png" class="lazyload"></p><p><img alt data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-23-01-23.png" class="lazyload"></p><p><img alt="选择你的时区" data-src="https://storage.googleapis.com/peter-duan-blog/19-12-22-23-03-40.png" class="lazyload"></p>]]></content>
       
       
       <categories>
@@ -382,6 +382,33 @@
     
     
     <entry>
+      <title>Test for Language</title>
+      <link href="/hexo/2019/06/21/Test-Lang/"/>
+      <url>/hexo/2019/06/21/Test-Lang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> English </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>序章</title>
       <link href="/hexo/2019/06/21/First/"/>
       <url>/hexo/2019/06/21/First/</url>
@@ -411,41 +438,14 @@
     </entry>
     
     
-    
-    <entry>
-      <title>Test for Language</title>
-      <link href="/hexo/2019/06/21/Test-Lang/"/>
-      <url>/hexo/2019/06/21/Test-Lang/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> English </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> Blog </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
   
   
     
     
     <entry>
-      <title>分类</title>
-      <link href="/hexo/categories/index.html"/>
-      <url>/hexo/categories/index.html</url>
+      <title>关于我</title>
+      <link href="/hexo/about/index.html"/>
+      <url>/hexo/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -454,9 +454,9 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/hexo/about/index.html"/>
-      <url>/hexo/about/index.html</url>
+      <title>分类</title>
+      <link href="/hexo/categories/index.html"/>
+      <url>/hexo/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
