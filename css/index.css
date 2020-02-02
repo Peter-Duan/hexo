@@ -2303,7 +2303,7 @@ blockquote footer cite:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.729) !important;
+  background: rgba(255,255,255,0) !important;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -o-transform: scale(0);
