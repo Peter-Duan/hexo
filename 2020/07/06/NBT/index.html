@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>NBT-TAG小记 | PeterDuan的技术博客</title><meta name="description" content="NBT-TAG小记"><meta name="keywords" content><meta name="author" content="Peter Duan"><meta name="copyright" content="Peter Duan"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://storage.googleapis.com/peter-duan-blog/logo.png"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="NBT-TAG小记"><meta name="twitter:description" content="NBT-TAG小记"><meta name="twitter:image" content="https://storage.googleapis.com/peter-duan-blog/20-07-07-13-30-03.png"><meta property="og:type" content="article"><meta property="og:title" content="NBT-TAG小记"><meta property="og:url" content="https://peter-duan.github.io/hexo/2020/07/06/NBT/"><meta property="og:site_name" content="PeterDuan的技术博客"><meta property="og:description" content="NBT-TAG小记"><meta property="og:image" content="https://storage.googleapis.com/peter-duan-blog/20-07-07-13-30-03.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/hexo/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.css"><link rel="canonical" href="https://peter-duan.github.io/hexo/2020/07/06/NBT/"><link rel="next" title="VisualStudio1" href="https://peter-duan.github.io/hexo/2020/04/13/VisualStudio1/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/hexo/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://peter-duan.github.io/hexo","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"Press","message_next":"to bookmark this page"},"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Light Mode Activated Manually","night_to_day":"Dark Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"}
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/hexo/">PeterDuan的技术博客</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hexo"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> Search</span></a></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="https://storage.googleapis.com/peter-duan-blog/19-09-17-22-05-82.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/hexo/archives/"><div class="headline">Articles</div><div class="length_num">20</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/hexo/tags/"><div class="headline">Tags</div><div class="length_num">14</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/hexo/categories/"><div class="headline">Categories</div><div class="length_num">6</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hexo"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">Catalog</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#思路："><span class="toc_mobile_items-text">思路：</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#准备："><span class="toc_mobile_items-text">准备：</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#实践1："><span class="toc_mobile_items-text">实践1：</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#实践2："><span class="toc_mobile_items-text">实践2：</span></a></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#思路："><span class="toc-text">思路：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备："><span class="toc-text">准备：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实践1："><span class="toc-text">实践1：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实践2："><span class="toc-text">实践2：</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://storage.googleapis.com/peter-duan-blog/20-07-07-13-30-03.png)"><div id="post-info"><div id="post-title"><div class="posttitle">NBT-TAG小记</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2020-07-06<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> Updated 2020-07-31</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/hexo/categories/杂/">杂</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon" aria-hidden="true"></i><span>Word count: </span><span class="word-count">662</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon" aria-hidden="true"></i><span>Reading time: 2 min</span><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>Post View: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>最近闲来无事和朋友闲谈，突然聊到了Minecraft和其中一个文件level.dat。尽管我用软件修改过这个文件，但是如何解析这个文件我并不知道。于是心血来潮尝试了一下。</p>
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><ol>
+<li>反编译Minecraft查找相关函数。</li>
+<li>Hex查看，并分析方法。<h3 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h3></li>
+<li>学习一下NBT相关知识。</li>
+<li>网上查询可知<code>level.dat</code>文件是个压缩文件格式是gzip。故解压得到同名文件<code>level</code>。<code>level</code>是一个NBT标签格式的文件，至此问题就变成了如何从零解析nbt格式的文件。</li>
+<li>用notepad++打开，可以看到，一些字符串和乱码。推测是加密后的数据。</li>
+</ol>
+<h3 id="实践1："><a href="#实践1：" class="headerlink" title="实践1："></a>实践1：</h3><ol>
+<li><p>打开jd-gui, 把<code>XXX.jar</code>丢进去，由于我并没有游戏本体，所以就用服务端代替了。搜索定位到<code>WorldLoader.class</code><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20-07-31-11-34-93.png" class="lazyload"></p>
+</li>
+<li><p>从这段代码可以看出来，它是如何读取dat文件的。这两个箭头分别是解压和读取。<img alt data-src="https://storage.googleapis.com/peter-duan-blog/20-07-31-11-38-43.png" class="lazyload"></p>
+</li>
+</ol>
+<p>3.之后由于不太了解Java所以并没有找到相关解密代码，所以放弃了这条路，换了另一条路。</p>
+<h3 id="实践2："><a href="#实践2：" class="headerlink" title="实践2："></a>实践2：</h3><ol>
+<li><p>网上找一个NbtEditor。读取了一下<code>level.dat</code>。<img alt data-src="https://storage.googleapis.com/peter-duan-blog/20-07-31-11-41-14.png" class="lazyload">从图中我们得知，这个文件的结构，最上面是一个空名的TAG_Compound，下面是名为Data的TAG_Compound，然后才是其他的数据。</p>
+</li>
+<li><p>用Sublime Text 打开<code>level</code> 并用hex模式查看。<img alt data-src="https://storage.googleapis.com/peter-duan-blog/20-07-31-11-46-42.png" class="lazyload">通过查询资料可知，所有的标签都有一个独立的ID和名称。标签的第一个字节为标签类型（ID）,其后两字节为存储名称的长度,之后以UTF-8格式的字符串的方式存储标签。</p>
+</li>
+<li><p>如上图所述，<code>0a 00 00</code> 第一个字节<code>0a</code>是代表标签ID，<code>0a</code>转换成10进制就是10。他所代表的就是TAG_Compound。<img alt data-src="https://storage.googleapis.com/peter-duan-blog/20-07-31-11-48-68.png" class="lazyload"><br>后面的<code>00 00</code>是标签名称的长度，由NBTEditor可知第一个标签并没有名称，所以是零。</p>
+</li>
+<li><p>知道了规矩，我们就可以尝试解析了，我们先用地图种子练练手。<img alt data-src="https://storage.googleapis.com/peter-duan-blog/20-07-31-11-56-87.png" class="lazyload"><br>我们可以看到<code>04 00 0a</code>，其中<code>04</code>是标签类型对应的是TAG_Long 8 字节 / 64 位；<code>00 0a</code>是标签名称长度，<code>0a</code>是十进制中的10，RandomSeed 刚好就是十位。</p>
+</li>
+<li><p>于是我们往RandomSeed后面推8位<code>74 2a17 004f 4271 c6</code>这就是种子的值了。于是我们把它转换从10进制就是<code>8370528147518681542</code><img alt data-src="https://storage.googleapis.com/peter-duan-blog/20-07-31-12-03-10.png" class="lazyload">可以看到与之前的结果相同。</p>
+</li>
+</ol>
+<p>至此，我们已经大概了解了如何从头读取<code>level.dat</code>文件，但是我有些不解，为啥当时Notch不用Json或XML呢？非要自己造个轮子。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Peter Duan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://peter-duan.github.io/hexo/2020/07/06/NBT/">https://peter-duan.github.io/hexo/2020/07/06/NBT/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://storage.googleapis.com/peter-duan-blog/20-07-07-13-30-03.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/hexo/2020/04/13/VisualStudio1/"><img class="next_cover lazyload" data-src="https://storage.googleapis.com/peter-duan-blog/20-04-13-16-20-95.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>VisualStudio1</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'VvDlOj6VAP0wTSUzppf3HwlJ-MdYXbMMI',
+  appKey:'dIMbQT8RIEUFHlDvwuemncv6',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en',
+  recordIP: true
+});</script></div></div></div><footer id="footer" style="background-image: url(https://storage.googleapis.com/peter-duan-blog/20-07-07-13-30-03.png)"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2020 By Peter Duan</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion" target="_self">简</a><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="Scroll to comment"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/hexo/js/utils.js"></script><script src="/hexo/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="/hexo/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zindex="-1" count="99" mobile="true" src="/hexo/js/third-party/canvas-nest.js"></script><script src="/hexo/js/tw_cn.js"></script><script>translateInitilization()
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
