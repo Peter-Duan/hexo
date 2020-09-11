@@ -200,7 +200,14 @@
   </url>
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Locked/</loc>
+    <loc>https://peter-duan.github.io/hexo/tags/Live2d/</loc>
+    <lastmod>2020-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-duan.github.io/hexo/tags/Qt/</loc>
     <lastmod>2020-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -215,6 +222,13 @@
   
   <url>
     <loc>https://peter-duan.github.io/hexo/tags/English/</loc>
+    <lastmod>2020-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-duan.github.io/hexo/tags/Locked/</loc>
     <lastmod>2020-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -243,20 +257,6 @@
   
   <url>
     <loc>https://peter-duan.github.io/hexo/tags/Markdown/</loc>
-    <lastmod>2020-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Live2d/</loc>
-    <lastmod>2020-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Qt/</loc>
     <lastmod>2020-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -293,6 +293,13 @@
   </url>
   
   <url>
+    <loc>https://peter-duan.github.io/hexo/categories/Live2d/</loc>
+    <lastmod>2020-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://peter-duan.github.io/hexo/categories/English/</loc>
     <lastmod>2020-09-11</lastmod>
     <changefreq>daily</changefreq>
@@ -301,13 +308,6 @@
   
   <url>
     <loc>https://peter-duan.github.io/hexo/categories/Hexo/</loc>
-    <lastmod>2020-09-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peter-duan.github.io/hexo/categories/Live2d/</loc>
     <lastmod>2020-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
