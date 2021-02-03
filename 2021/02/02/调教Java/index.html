@@ -73,10 +73,13 @@ function activateLightMode(){
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
 <li>安装没啥好讲的一路Next即可</li>
 <li>装完后把JDK和JRE安装目录下的bin文件夹放到环境变量</li>
-<li>重新打开cmd，分别键入java和javac，输出如下<br><img alt="Javac" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-53-31.png" class="lazyload"><br><img alt="Java" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-55-95.png" class="lazyload"><h3 id="一些小坑"><a href="#一些小坑" class="headerlink" title="一些小坑"></a>一些小坑</h3></li>
-<li>我点电脑出于一些原因cmd的字符集为<code>850</code>，且不方便更改。所以Java编译输出总是乱码遂将Java语言调成英文。具体方法为在环境变量里新建新的环境变量叫<code>JAVA_TOOL_OPTIONS</code>值为<code>-Duser.language=en</code>。</li>
-<li>曾尝试修改cmd默认字符集，先是修改<code>HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe</code>里的CodePage，但没有效果。后修改<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage</code>里的<code>OEMCP</code>，虽成功但导致了奇怪的BUG，即无法使用U盘，当试图打开U盘里的文件时报错“有更多数据可用(More data available)”。把<code>OEMCP</code>改回原来的即可。<h2 id="IntelliJ-IDEA"><a href="#IntelliJ-IDEA" class="headerlink" title="IntelliJ IDEA"></a>IntelliJ IDEA</h2><h3 id="下载-1"><a href="#下载-1" class="headerlink" title="下载"></a>下载</h3>比起JDK，这个就好下载多了，去到<a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">官网</a>下载Community版即可。</li>
+<li>重新打开cmd，分别键入java和javac，输出如下<br><img alt="Javac" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-53-31.png" class="lazyload"><br><img alt="Java" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-55-95.png" class="lazyload"></li>
 </ol>
+<h3 id="一些小坑"><a href="#一些小坑" class="headerlink" title="一些小坑"></a>一些小坑</h3><ol>
+<li>我点电脑出于一些原因cmd的字符集为<code>850</code>，且不方便更改。所以Java编译输出总是乱码遂将Java语言调成英文。具体方法为在环境变量里新建新的环境变量叫<code>JAVA_TOOL_OPTIONS</code>值为<code>-Duser.language=en</code>。</li>
+<li>曾尝试修改cmd默认字符集，先是修改<code>HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe</code>里的CodePage，但没有效果。后修改<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage</code>里的<code>OEMCP</code>，虽成功但导致了奇怪的BUG，即无法使用U盘，当试图打开U盘里的文件时报错“有更多数据可用(More data available)”。把<code>OEMCP</code>改回原来的即可。</li>
+</ol>
+<h2 id="IntelliJ-IDEA"><a href="#IntelliJ-IDEA" class="headerlink" title="IntelliJ IDEA"></a>IntelliJ IDEA</h2><h3 id="下载-1"><a href="#下载-1" class="headerlink" title="下载"></a>下载</h3><p>比起JDK，这个就好下载多了，去到<a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">官网</a>下载Community版即可。</p>
 <h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>这个安装也没多大问题，选择自己需要的即可。</p>
 <h3 id="调教"><a href="#调教" class="headerlink" title="调教"></a>调教</h3><ol>
 <li>首先是中文，到Files-&gt;Settings-&gt;Plugins里搜索Chinese，前几个中的一个便是。但有时中文翻译并不准确容易造成误导，建议使用英文。</li>
