@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>调教Java</title>
+      <link href="/hexo/2021/02/02/%E8%B0%83%E6%95%99Java/"/>
+      <url>/hexo/2021/02/02/%E8%B0%83%E6%95%99Java/</url>
+      
+        <content type="html"><![CDATA[<h1 id="调教Java"><a href="#调教Java" class="headerlink" title="调教Java"></a>调教Java</h1><p>今天正式开始上ICS4U，学的是Java虽然以前也有接触过Java，但早就全忘了。于是今天又把Java装回来了，顺便把IntelliJ IDEA也一并安装了。装了新玩具肯定是要好好调教一番。</p><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>不知从何时起 Oracle 要求登录账号才可以下载JDK和JRE，但是像我这样的人又怎能屈服于Oracle的淫威之下！本着能不注册绝不注册的原则，最终在网上找到了下载地址。检查过SHA256后，遂放心安装。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>安装没啥好讲的一路Next即可</li><li>装完后把JDK和JRE安装目录下的bin文件夹放到环境变量</li><li>重新打开cmd，分别键入java和javac，输出如下<br><img alt="Javac" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-53-31.png" class="lazyload"><br><img alt="Java" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-55-95.png" class="lazyload"><h3 id="一些小坑"><a href="#一些小坑" class="headerlink" title="一些小坑"></a>一些小坑</h3></li><li>我点电脑出于一些原因cmd的字符集为<code>850</code>，且不方便更改。所以Java编译输出总是乱码遂将Java语言调成英文。具体方法为在环境变量里新建新的环境变量叫<code>JAVA_TOOL_OPTIONS</code>值为<code>-Duser.language=en</code>。</li><li>曾尝试修改cmd默认字符集，先是修改<code>HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe</code>里的CodePage，但没有效果。后修改<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage</code>里的<code>OEMCP</code>，虽成功但导致了奇怪的BUG，即无法使用U盘，当试图打开U盘里的文件时报错“有更多数据可用(More data available)”。把<code>OEMCP</code>改回原来的即可。<h2 id="IntelliJ-IDEA"><a href="#IntelliJ-IDEA" class="headerlink" title="IntelliJ IDEA"></a>IntelliJ IDEA</h2><h3 id="下载-1"><a href="#下载-1" class="headerlink" title="下载"></a>下载</h3>比起JDK，这个就好下载多了，去到<a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">官网</a>下载Community版即可。</li></ol><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>这个安装也没多大问题，选择自己需要的即可。</p><h3 id="调教"><a href="#调教" class="headerlink" title="调教"></a>调教</h3><ol><li>首先是中文，到Files-&gt;Settings-&gt;Plugins里搜索Chinese，前几个中的一个便是。但有时中文翻译并不准确容易造成误导，建议使用英文。</li><li>其次是字体问题，在控制台和注释里难免会有一些中文出现，但是默认字体宋体实在是辣眼睛，便到Settings里设置。<br><img alt="字体" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-54-69.png" class="lazyload"><br><img alt="控制台字体" data-src="https://storage.googleapis.com/peter-duan-blog/21-02-02-21-54-50.png" class="lazyload"></li></ol><p>奈何内置等宽字体都不支持中文，只能从网上下载，然后放到<code>C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\jbr\lib\fonts</code>里即可，有可能放进去之后仍然找不到，这时需要把<code>仅现实等宽字体</code>关掉。我这里用的是YaHei Mono。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 调教 </tag>
+            
+            <tag> IntelliJ IDEA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Voicemeeter</title>
       <link href="/hexo/2020/09/10/Voicemeeter/"/>
       <url>/hexo/2020/09/10/Voicemeeter/</url>
@@ -461,6 +490,33 @@
     
     
     <entry>
+      <title>Test for Language</title>
+      <link href="/hexo/2019/06/21/Test-Lang/"/>
+      <url>/hexo/2019/06/21/Test-Lang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> English </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> English </tag>
+            
+            <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>序章</title>
       <link href="/hexo/2019/06/21/First/"/>
       <url>/hexo/2019/06/21/First/</url>
@@ -490,33 +546,6 @@
     </entry>
     
     
-    
-    <entry>
-      <title>Test for Language</title>
-      <link href="/hexo/2019/06/21/Test-Lang/"/>
-      <url>/hexo/2019/06/21/Test-Lang/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>This page is for the language.</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> English </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> English </tag>
-            
-            <tag> Blog </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
   
   
     
@@ -533,9 +562,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/hexo/link/index.html"/>
-      <url>/hexo/link/index.html</url>
+      <title>分类</title>
+      <link href="/hexo/categories/index.html"/>
+      <url>/hexo/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -544,9 +573,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/hexo/categories/index.html"/>
-      <url>/hexo/categories/index.html</url>
+      <title>友情链接</title>
+      <link href="/hexo/link/index.html"/>
+      <url>/hexo/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
