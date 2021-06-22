@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Computer Vision</title>
+      <link href="/hexo/2021/06/22/Computer-Vision/"/>
+      <url>/hexo/2021/06/22/Computer-Vision/</url>
+      
+        <content type="html"><![CDATA[<p>Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world. Using digital images from cameras and video and deep learning models, machines can accurately recognize and classify objects and then react to what they “see“. We can say that computer vision is the science of how machines can “see” as humans do. Computer vision tasks include methods for acquiring, processing, analyzing, and understanding digital images, as well as methods for extracting data from the real world to produce numerical or symbolic information. In this context, understanding means converting visual images (input from the retina) into descriptions of the world that are meaningful to thought processes and can trigger appropriate actions. This image understanding can be seen as the separation of symbolic information from image data using models constructed with the help of geometry, physics, statistics, and learning theory.<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/21-06-22-02-38-27.png" class="lazyload"></p><p>In 1959, neurophysiologists David Hubel and Torsten Wiesel published “Receptive fields of single neurons in the cat’s striate cortex”. They first discovered that visual primary cortical neurons were sensitive to moving edge stimuli through visual experiments on cats, and discovered the structure of the visual function column, which laid the foundation for visual neural research.<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/21-06-22-02-39-88.png" class="lazyload"></p><p>In 1963, Lawrence Roberts’ “Machine Perception of Three-Dimensional Solids” described the process of deriving three-dimensional information from two-dimensional pictures. It is one of the precursors of modern computer vision, pioneered computer vision research aimed at understanding three-dimensional scenes.</p><p>In 1982, neuroscientist David Marr’s students help him published the influential book “Vision: A computational investigation into the human representation and processing of visual information”. Based on Hubel and Wiesel’s idea that visual processing does not start with the whole object, David introduced a vision framework in which low-level algorithms for detecting edges, curves, corners, etc. were used as a pavement for a high-level understanding of visual data. This book marks computer vision as a stand-alone discipline.<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/21-06-22-02-39-61.png" class="lazyload"></p><p>In 1989, Yann LeCun at AT&amp;T Bell Labs developed a convolutional neural network that was successfully used for postal code recognition. This was the beginning of convolutional neural networks, which are widely used in computer vision today.</p><p>In the late 1990s, computer vision as a field shifted its focus to a large extent. Around 1999, many researchers don’t try to reconstruct objects by creating 3D models of them (the path proposed by Marr) and instead shifted their efforts to feature-based object recognition.<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/21-06-22-02-40-52.png" class="lazyload"></p><p>By the 21st century, with the development of various new convolutional neural network algorithms and various deep learning algorithms. Researchers no longer had to provide data samples by hand. According to Forbes, users share more than 3 billion images online every day, and this data is used to train computer vision systems. This has also led to amazing advances in computer vision, with object recognition and classification accuracy rates rising from 50 percent to 99 percent in less than a decade. Today’s systems are more accurate than humans at quickly detecting and responding to visual input.<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/21-06-22-02-40-98.png" class="lazyload"></p><p>Computer vision is now integrated into all aspects of our lives, such as facial recognition.  Facial recognition technology is used to match a face on a photograph to its identity. The most common application is facial unlocking devices. More advanced uses include residential or commercial security systems that use an individual’s unique physical characteristics to verify their identity.</p><p>Another major direction is autonomous driving, where computer vision allows cars to sense their surroundings or road conditions and make automatic route planning and decisions.</p><p>Computer vision can also be used in the medical field, where it is often used to analyze medical images such as X-rays, MRIs, and, according to Google, to detect cancer metastases more accurately than a human doctor.<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/21-06-22-02-41-38.png" class="lazyload"></p><p>Computer vision is an important area of machine learning, and more and more industries are incorporating computer vision into their products to improve productivity, such as agriculture, where computer vision can be used to monitor the status of crops all the time and implement appropriate measures.<br><img alt data-src="https://storage.googleapis.com/peter-duan-blog/21-06-22-02-41-31.png" class="lazyload"></p><p>Or manufacturing, where computer vision and robotic arms can be used to efficiently complete operations, more efficiently and cheaper than human labor. It can also be combined with Natural Language Generation to help visually impaired people to understand their surroundings. </p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>调教Java</title>
       <link href="/hexo/2021/02/02/%E8%B0%83%E6%95%99Java/"/>
       <url>/hexo/2021/02/02/%E8%B0%83%E6%95%99Java/</url>
@@ -562,17 +575,6 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/hexo/tags/index.html"/>
-      <url>/hexo/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我</title>
       <link href="/hexo/about/index.html"/>
       <url>/hexo/about/index.html</url>
@@ -587,6 +589,17 @@
       <title>友情链接</title>
       <link href="/hexo/link/index.html"/>
       <url>/hexo/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/hexo/tags/index.html"/>
+      <url>/hexo/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
