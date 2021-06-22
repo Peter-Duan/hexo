@@ -200,14 +200,21 @@
 
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Diary/</loc>
+    <loc>https://peter-duan.github.io/hexo/tags/Live2d/</loc>
     <lastmod>2021-06-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Locked/</loc>
+    <loc>https://peter-duan.github.io/hexo/tags/Qt/</loc>
+    <lastmod>2021-06-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-duan.github.io/hexo/tags/Diary/</loc>
     <lastmod>2021-06-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -221,14 +228,7 @@
   </url>
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Live2d/</loc>
-    <lastmod>2021-06-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Qt/</loc>
+    <loc>https://peter-duan.github.io/hexo/tags/Locked/</loc>
     <lastmod>2021-06-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -335,14 +335,14 @@
 
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/categories/Diary/</loc>
+    <loc>https://peter-duan.github.io/hexo/categories/Live2d/</loc>
     <lastmod>2021-06-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/categories/Live2d/</loc>
+    <loc>https://peter-duan.github.io/hexo/categories/Diary/</loc>
     <lastmod>2021-06-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
