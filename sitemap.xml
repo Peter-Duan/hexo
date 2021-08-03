@@ -228,6 +228,20 @@
   </url>
   
   <url>
+    <loc>https://peter-duan.github.io/hexo/tags/blog/</loc>
+    <lastmod>2021-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-duan.github.io/hexo/tags/English/</loc>
+    <lastmod>2021-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://peter-duan.github.io/hexo/tags/Hexo/</loc>
     <lastmod>2021-08-03</lastmod>
     <changefreq>daily</changefreq>
@@ -256,20 +270,6 @@
   </url>
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/tags/blog/</loc>
-    <lastmod>2021-08-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peter-duan.github.io/hexo/tags/English/</loc>
-    <lastmod>2021-08-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://peter-duan.github.io/hexo/tags/Live2d/</loc>
     <lastmod>2021-08-03</lastmod>
     <changefreq>daily</changefreq>
@@ -284,6 +284,13 @@
   </url>
   
   <url>
+    <loc>https://peter-duan.github.io/hexo/tags/Blog/</loc>
+    <lastmod>2021-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://peter-duan.github.io/hexo/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2021-08-03</lastmod>
     <changefreq>daily</changefreq>
@@ -292,13 +299,6 @@
   
   <url>
     <loc>https://peter-duan.github.io/hexo/tags/Voicemeeter/</loc>
-    <lastmod>2021-08-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://peter-duan.github.io/hexo/tags/Blog/</loc>
     <lastmod>2021-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -349,14 +349,14 @@
   </url>
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/categories/Hexo/</loc>
+    <loc>https://peter-duan.github.io/hexo/categories/English/</loc>
     <lastmod>2021-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://peter-duan.github.io/hexo/categories/English/</loc>
+    <loc>https://peter-duan.github.io/hexo/categories/Hexo/</loc>
     <lastmod>2021-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
